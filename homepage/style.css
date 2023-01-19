@@ -1,57 +1,59 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* **************************************** Header-div ************************************************** */
 #header-div {
-    background-color: rgb(235, 235, 235);
-    display: flex;
-    color: black;
-    justify-content: space-between;
-    padding: 5px 70px;
-    font-weight: 350;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  padding: 5px 70px;
+  font-weight: 350;
 }
 
 #header-div>div:nth-child(1) {
-    display: flex;
-    gap: 18px;
-    font-size: 18px;
+  display: flex;
+  gap: 18px;
+  font-size: 18px;
 }
 
 #header-div>div:nth-child(2) {
-    display: flex;
-    gap: 13px;
-    font-size: 15px;
+  display: flex;
+  gap: 13px;
+  font-size: 15px;
 }
 
 #header-div a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #header-div>div:nth-child(1) a:hover {
-    color: rgb(253, 94, 3);
+  color: rgb(253, 94, 3);
 }
 
 #header-div>div:nth-child(2) a:last-child {
-    color: rgb(253, 94, 3);
+  color: rgb(253, 94, 3);
 }
 
 /* **************************************** nav ************************************************** */
-  nav{
-    padding: 5px 70px;
-    display: flex;
-    height: 13vh;
-    align-items: center;
-    justify-content: space-between;
+nav {
+  padding: 5px 70px;
+  display: flex;
+  height: 13vh;
+  align-items: center;
+  justify-content: space-between;
 }
-nav img{
-    height: 60px;
-    width: 130px;
-    align-items: center;
+
+nav img {
+  height: 60px;
+  width: 130px;
+  align-items: center;
 }
+
 .search {
   display: flex;
   text-align: center;
@@ -71,7 +73,8 @@ nav img{
   margin-right: -2rem;
 }
 
-.search__input:hover, .search__input:focus {
+.search__input:hover,
+.search__input:focus {
   box-shadow: 0 0 1em #00000013;
 }
 
@@ -85,13 +88,13 @@ nav img{
   color: rgb(107, 106, 106);
 }
 
-.search__input:focus + .search__button {
+.search__input:focus+.search__button {
   background-color: #e0dede;
 }
 
 .search__button {
   border: none;
-  background-color:  #e0dede;
+  background-color: #e0dede;
   margin-top: .1em;
   height: 60%;
   padding: 4px 0px;
@@ -107,7 +110,7 @@ nav img{
   fill: #0a0a0a;
 }
 
-.icon{
+.icon {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -115,8 +118,9 @@ nav img{
   width: 21%;
   padding: 10px;
   gap: 20px;
-} 
-.icon div:hover{
+}
+
+.icon div:hover {
   cursor: pointer;
 }
 
@@ -167,7 +171,7 @@ nav img{
   width: max-content;
   z-index: 1;
   padding: 20px;
-  border: 1px solid  black;
+  border: 1px solid black;
 }
 
 .dropdown:hover .dropdown-content {
@@ -188,32 +192,36 @@ nav img{
   margin-bottom: 10px;
 }
 
-.dropdown-content>div>div a{
+.dropdown-content>div>div a {
   display: block;
   padding: 0px 8px;
   font-weight: 400;
-  font-size: 14px; 
+  font-size: 14px;
   color: rgb(138, 133, 133);
   text-decoration: none;
 }
-.col>div{
+
+.col>div {
   margin-top: 25px;
 }
-.col>div:first-child{
+
+.col>div:first-child {
   margin-top: 0px;
 }
+
 .col a:hover {
   color: #ff8a00;
 }
 
 /* **************************************** Footer ************************************************** */
-footer{
+footer {
   background-color: #f5f5f5;
   padding-top: 40px;
   width: 100%;
+  /* border: 1px solid yellow; */
 }
 
-footer>div:nth-child(1){
+footer>div:nth-child(1) {
   display: flex;
   width: 87%;
   height: 300px;
@@ -221,36 +229,42 @@ footer>div:nth-child(1){
   margin: auto;
   font-weight: 300;
 }
-footer>div:nth-child(1) div{
+
+footer>div:nth-child(1) div {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
   width: 25%;
   /* border: 1px solid black; */
   margin: auto;
   margin-top: 2px;
   gap: 10px 0px;
-  
+
 }
-footer a{
+
+footer a {
   color: #737272;
   text-decoration: none;
 }
-footer>div img{
+
+footer>div img {
   height: 10vh;
   width: 130px;
 }
-footer>div:nth-child(2){
+
+footer>div:nth-child(2) {
   display: flex;
   width: 90%;
   margin: auto;
   margin-top: 40px;
   font-weight: 300;
 }
-footer>div:nth-child(2) div{
+
+footer>div:nth-child(2) div {
   width: 30%;
   margin: auto;
 }
-footer>div:nth-child(3){
+
+footer>div:nth-child(3) {
   display: flex;
   width: 87%;
   margin: auto;
@@ -260,22 +274,26 @@ footer>div:nth-child(3){
   border-top: 1px solid rgb(193, 192, 192);
   border-bottom: 1px solid rgb(193, 192, 192);
 }
-footer>div:nth-child(3)>div{
+
+footer>div:nth-child(3)>div {
   width: 70%;
   margin: auto;
   height: 23vh;
 }
-footer>div:nth-child(3) img{
- height: 80%;
-width: 80%;
+
+footer>div:nth-child(3) img {
+  height: 80%;
+  width: 80%;
 }
+
 .footer-icons {
   display: flex;
   align-items: center;
-  margin-top:8px;
+  margin-top: 8px;
 
 }
-.footer-icons a{
+
+.footer-icons a {
   color: #fff;
   padding: 10px;
   border-radius: 50%;
@@ -288,46 +306,229 @@ width: 80%;
   align-items: center;
   justify-content: center;
 }
-.facebook-icon{
+
+.facebook-icon {
   background-color: rgb(27, 120, 241);
-} 
-.youtube-icon{
+}
+
+.youtube-icon {
   background-color: rgb(241, 27, 27);
 }
- .twitter-icon{
+
+.twitter-icon {
   background-color: rgb(87, 146, 224);
- } 
- .instagram-icon{
+}
+
+.instagram-icon {
   background-color: rgb(241, 27, 173);
- }
- .linkedin-icon{
+}
+
+.linkedin-icon {
   background-color: rgb(6, 73, 161);
- }
- .pinterest-icon{
+}
+
+.pinterest-icon {
   background-color: rgb(241, 27, 27);
- }
- .footer-icons a:hover{
+}
+
+.footer-icons a:hover {
   background-color: #555;
   color: #fff;
   text-decoration: none;
 }
+
 .fab {
   font-size: 20px;
 }
-footer>div:nth-child(4){
+
+footer>div:nth-child(4) {
   display: flex;
   width: 87%;
   margin: auto;
   margin-top: 40px;
-  padding-bottom: 40px ;
+  padding-bottom: 40px;
   font-weight: 300;
   justify-content: space-between;
 }
-footer>div:nth-child(4) div{
- display: flex;
- gap: 10px;
- color: #737272;
+
+footer>div:nth-child(4) div {
+  display: flex;
+  gap: 10px;
+  color: #737272;
+}
+
+/* **************************************** Slider ************************************************** */
+.slider1 {
+  width: 89%;
+  margin: auto;
+  height: fit-content;
+  display: flex;
+  margin-bottom: 30px;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+}
+
+.swiper {
+  width: 75%;
+  height: fit-content;
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.swiper-slide>img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider1>div:last-child {
+  width: 22%;
+  height: 72vh;
+  /* border: 1px solid red; */
+
+}
+
+.slider1>div:last-child img {
+  width: 100%;
+  height: 100%;
+}
+
+/* **************************************** Gun image ************************************************** */
+
+.gun-image {
+  width: 87.5%;
+  height: 20vh;
+  margin: auto;
+  margin-bottom: 30px;
+  /* border: 1px solid black; */
+
+}
+
+.gun-image img {
+  width: 100%;
+  height: 100%;
+  padding-left: 7px;
+}
+
+/* **************************************** divs ************************************************** */
+.WhatTheFry,
+.TrendsInFurniture,
+.NewArrival,
+.TheWinterEdit,
+.TopBrans,
+.Blog,
+.CustomerSpeaks,
+.NeedHelp,
+.ShopByRoom {
+  width: 89%;
+  height: fit-content;
+  margin: auto;
+  margin-bottom: 40px;
+  /* border: 1px solid red; */
+}
+
+.WhatTheFry>div,
+.TrendsInFurniture>div,
+.NewArrival>div,
+.TheWinterEdit>div,
+.TopBrans>div,
+.Blog>div,
+.CustomerSpeaks>div,
+.NeedHelp>div,
+.ShopByRoom>div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 
+.WhatTheFry>div a,
+.NewArrival>div a,
+.TopBrans>div a,
+.Blog>div a,
+.ShopByRoom>div a {
+  width: 24%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+.TrendsInFurniture>div a,
+.TheWinterEdit>div a,
+.CustomerSpeaks>div a {
+  width: 32%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+.NeedHelp>div a {
+  width: 15%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
 
+.WhatTheFry>div>a img,
+.TrendsInFurniture>div>a img,
+.NewArrival>div>a img,
+.TheWinterEdit>div>a img,
+.TopBrans>div>a img,
+.Blog>div>a img,
+.CustomerSpeaks>div>a img,
+.NeedHelp>div>a img,
+.ShopByRoom>div>a img{
+  width: 100%;
+}
+
+.WhatTheFry p,
+.TrendsInFurniture p,
+.NewArrival p,
+.TopBrans p,
+.Blog p,
+.CustomerSpeaks p {
+  color: grey;
+}
+
+.WhatTheFry h2,
+.TrendsInFurniture h2,
+.NewArrival h2,
+.TopBrans h2 {
+  font-weight: 450;
+}
+
+.CustomerSpeaks h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.NeedHelp h2 {
+  font-size: 17px;
+  font-weight: 350;
+}
+
+.TrendsInFurniture>div a:hover,
+.TheWinterEdit>div a:hover,
+.CustomerSpeaks>div a:hover,
+.ShopByRoom>div a:hover,
+.WhatTheFry>div a:hover,
+.NewArrival>div a:hover,
+.TopBrans>div a:hover,
+.Blog>div a:hover,
+.NeedHelp>div a:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+/* .WhatTheFry>div>a img:hover,
+.TrendsInFurniture>div>a img:hover,
+.NewArrival>div>a img:hover,
+.TheWinterEdit>div>a img:hover,
+.TopBrans>div>a img:hover,
+.Blog>div>a img:hover,
+.CustomerSpeaks>div>a img:hover,
+.NeedHelp>div>a img:hover{
+  width: 101%;
+} */
+@media screen {}
