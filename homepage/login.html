@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/<your-kit-code>.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/mn.png">
+</head>
+<style>
+    .cotanier1{
+        width: 100%;
+        height: 550px;
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzjW45_1AHC87TBlvxPTIhbbnx6N0oA2iUkA&usqp=CAU);
+        background-repeat: 0;
+        background-size: cover;
+    }
+    .loginpage{
+        width: 45%;
+        height: 500px;
+        display: flex;
+        background-color: antiquewhite;
+        margin: auto;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    
+    .loginpage>#leftpart img{
+        height: 100%;
+        width: 100%;
+    }
+    .loginpage>#rightpart{
+        width: 60%;
+        height: 510px;
+        align-items:center;
+        margin: auto;
+    }
+    .loginpage>#rightpart>input{
+        display: flex;
+        border: none;
+        width: 250px;
+        background-color: antiquewhite;
+        border-bottom: 1px solid black;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 20px;
+    }
+    .loginpage>#rightpart>button{
+        background-color: orangered;
+        width: 300px;
+        height: 50px;
+        border: none;
+        border-radius: 1px;
+        margin: 10px 20px;
+    }
+    .loginpage>#rightpart>button>a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .loginpage>#rightpart>p{
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        margin-left: 20px;
+
+    }
+    .loginpage>#rightpart>#lbottompart{
+        margin-top: 0px; 
+    }
+    .loginpage>#rightpart>#lbottompart{
+        margin: auto;
+        width: 80%;
+        align-items: baseline;
+        justify-content: baseline;
+    }
+    .loginpage>#rightpart>#lbottompart button{
+        border: 1px solid orangered;
+        width: 280px;
+        margin-right: 20px;
+        height: 40px;
+    }
+    .loginpage>#rightpart>#lbottompart img{
+        width: 20px;
+    }
+</style>
+<body>
+    <header>
+        <!-- ************************************header-div*********************************************************** -->
+        <div id="header-div">
+            <div>
+                <a href="#">Sell on Pepperfry</a>
+                <a href="#">Become a Franchisee</a>
+                <a href="#">Buy in Bulk</a>
+                <a href="#">Find a Studio</a>
+                <a href="#">Find Design Inspiration</a>
+            </div>
+            <div>
+                <a href="#">Enter pincode</a>
+                <a href="#">Find Pepperfry studio</a>
+            </div>
+        </div>
+        <!-- ************************************Nav*********************************************************** -->
+        <nav>
+            <div>
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Your door to happiness opens with a search">
+                <button class="search__button">
+                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path
+                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="icon">
+                <div class="icon_box">
+                    <i class="far fa-user"></i>
+                </div>
+                <div class="icon_box">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="icon_box">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="icon_box">
+                    <i class="fas fa-truck-moving"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- ************************************Dropdown Menu*********************************************************** -->
+        <div class="dropdown">
+            <ul>
+                <li>
+                    <a href="#">Furniture</a>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                                    <h6>Sofas</h6>
+                                    <a href="#">3 Seater Sofas</a>
+                                    <a href="#">2 Seater Sofas</a>
+                                    <a href="#">1 Seater Sofas</a>
+                                    <a href="#">Sofa Sets</a>
+                                    <a href="#">LHS Sectionals</a>
+                                    <a href="#">RHS Sectionals</a>
+                                    <a href="#">Corner Sofas</a>
+                                    <a href="#">Chaise Loungers</a>
+                                    <a href="#">Sofa Cum Beds</a>
+                                    <a href="#">Futons</a>
+                                </div>
+                                <div>
+                                    <h6>Recliners</h6>
+                                    <a href="#">1 Seater</a>
+                                    <a href="#">2 Seater</a>
+                                    <a href="#">3 Seater</a>
+                                    <a href="#">Recliner Sets</a>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h6>Sofa Chairs</h6>
+                                    <a href="#">Wing Chairs</a>
+                                    <a href="#">Lounge Chairs</a>
+                                    <a href="#">Slipper Chairs</a>
+                                    <a href="#">Barrel Chairs</a>
+                                </div>
+                                <div>
+                                    <h6>Office Chairs</h6>
+                                    <a href="#">Ergonomic Chairs</a>
+                                    <a href="#">Executive Chairs</a>
+                                    <a href="#">FutTraining Chairsons</a>
+                                    <a href="#">Guest Chairs</a>
+                                    <a href="#">Cantilever Chairs</a>
+                                </div>
+                                <div>
+                                    <h6>Gaming Chairs</h6>
+                                </div>
+                                <div>
+                                    <h6> Bean Bags</h6>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h6>Chairs</h6>
+                                    <a href="#">Arm Chairs</a>
+                                    <a href="#">Rocking Chairs</a>
+                                    <a href="#">Folding Chairs</a>
+                                    <a href="#">Iconic Chairs</a>
+                                    <a href="#">Cafe Chairs</a>
+                                </div>
+                                <div>
+                                    <h6>Seating</h6>
+                                    <a href="#">Seating</a>
+                                    <a href="#">Benches</a>
+                                    <a href="#">Ottomans</a>
+                                    <a href="#">Pouffes</a>
+                                    <a href="#">Recamiers</a>
+                                    <a href="#">Foot Stools</a>
+                                    <a href="#">Seating Stools</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h6>Centre Tables</h6>
+                                    <a href="#">Coffee Tables</a>
+                                    <a href="#">Coffee Table Sets</a>
+                                    <a href="#">End Tables</a>
+                                    <a href="#">Nest of Tables</a>
+                                    <a href="#">C Shaped Tables</a>
+                                </div>
+                                <div>
+                                    <h6>TV & Media Units</h6>
+                                    <a href="#">TV Consoles</a>
+                                    <a href="#">TV Shelves</a>
+                                    <a href="#">TV Units</a>
+                                </div>
+                                <div>
+                                    <h6>Shoe Racks</h6>
+                                    <a href="#">Shoe Cabinets</a>
+                                    <a href="#">Open Shoe Racks</a>
+                                    <a href="#">Shoe Rack & Seat</a>
+                                    <a href="#">Tilt Out Racks</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h6>Dining Sets</h6>
+                                    <a href="#">4 Seater Sets</a>
+                                    <a href="#">6 Seater Sets</a>
+                                    <a href="#">8 Seater Sets</a>
+                                    <a href="#">2 Seater Sets</a>
+                                </div>
+                                <div><h6>Dining Chairs</h6></div>
+                                <div><h6>Dining Tables</h6></div>
+                                <div><h6>Console Tables</h6></div>
+                                <div>
+                                    <h6>Bar Furniture</h6>
+                                    <a href="#">Bar Cabinets</a>
+                                    <a href="#">Bar Trolleys</a>
+                                    <a href="#">Bar Stools</a>
+                                    <a href="#">Bar Table Sets</a>
+                                    <a href="#">Wine Racks</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h6>Beds</h6>
+                                    <a href="#">Queen Size Beds</a>
+                                    <a href="#">King Size Beds</a>
+                                    <a href="#">Single Beds</a>
+                                    <a href="#">Poster Bed</a>
+                                    <a href="#">Folding Bed</a>
+                                </div>
+                                <h6>Bedside Tables</h6>
+                                <a href="#">Night Stands</a>
+                                <a href="#">Bedside Chests</a>
+                                <a href="#">Dressing Tables</a>
+                                <div>
+                                    <h6>Dressers</h6>
+                                    <a href="#">Dressing Cabinets</a>
+                                    <a href="#">Dressing Consoles</a>
+                                    <a href="#">Dressing Units</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h6>Wardrobes</h6>
+                                    <a href="#">1 Door</a>
+                                    <a href="#">2 Door</a>
+                                    <a href="#">3 Door</a>
+                                    <a href="#">4 Door</a>
+                                    <a href="#">4+ Door</a>
+                                    <a href="#">Sliding Door</a>
+                                    <a href="#">Corner Sofas</a>
+                                    <a href="#">Chaise Loungers</a>
+                                    <a href="#">Sofa Cum Beds</a>
+                                    <a href="#">Futons</a>
+                                </div>
+                                <div>
+                                    <h6>Cabinetry</h6>
+                                    <a href="#">Sideboards</a>
+                                    <a href="#">Chest of Drawers</a>
+                                    <a href="#">Plastic Cabinets</a>
+                                    <a href="#">Book Shelves</a>
+                                    <a href="#">Book Cases</a>
+                                    <a href="#">Kitchen Cabinets</a>
+                                    <a href="#">Office Cabinets</a>
+                                    <a href="#">Trunks</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h6>Study Tables</h6>
+                                    <a href="#">Writing Tables</a>
+                                    <a href="#">Computer Tables</a>
+                                    <a href="#">Hutch Desks</a>
+                                    <a href="#">Foldable Tables</a>
+                                    <a href="#">Wall Mounted</a>
+                                    <a href="#">Portable Tables</a>
+                                    <a href="#">Office Tables</a>
+                                </div>
+                                <div>
+                                    <h6>Outdoor</h6>
+                                    <a href="#">Swings</a>
+                                    <a href="#">Hammocks</a>
+                                    <a href="#">Tables</a>
+                                    <a href="#">Table & Chair Sets</a>
+                                    <a href="#">Seating</a>
+                                    <a href="#">Plastic Chairs</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <h6>Kids & Teens</h6>
+                                    <a href="#">Cribs</a>
+                                    <a href="#">Beds</a>
+                                    <a href="#">Bunk Beds</a>
+                                    <a href="#">Studyy</a>
+                                    <a href="#">Wardrobes</a>
+                                    <a href="#">Book Shelves</a>
+                                    <a href="#">Storage</a>
+                                    <a href="#">Seating</a>
+                                    <a href="#">Bean Bags</a>
+                                </div>
+                                <div>
+                                    <h6>Furniture Care</h6>
+                                    <a href="#">Furniture Care Kit</a>
+                                    <a href="#">Sofa Spa</a>
+                                    <a href="#">Chair Spa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Home Décor</a></li>
+                <li><a href="#">Lamps & Lighting</a></li>
+                <li><a href="#">Kitchen & Dining</a></li>
+                <li><a href="#">Furnishings</a></li>
+                <li><a href="#">Mattresses</a></li>
+                <li><a href="#">Appliances</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Modular</a></li>
+                <li><a href="#">Gift Cards</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="cotanier1">
+        <div class="loginpage">
+            <div id="leftpart">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Web_IMG_17Dec1x_2712.jpg" alt="not working">
+            </div>
+            <div id="rightpart">
+                <input type="name" placeholder="Name" value="">
+                <input type="Number" placeholder="Mobile Number">
+                <input type="email" placeholder="Email ID">
+                <input type="password" placeholder="Password">
+                <button><a href="http://127.0.0.1:5500/unnatural-throat-9914/homepage/index.html">YEAH! I WANT CREDITS</a> </button>
+                <p>By registering you agree to our <a href="#">Terms & Conditions</a></p>
+                <div id="lbottompart">
+                    <button>Existing User? Log In</button>
+                    <p>OR Continue with <img src="https://ii1.pepperfry.com/images/social_login_fb_2x.png" alt=""> <img src="https://ii1.pepperfry.com/images/social_login_google_2x.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- ************************************div1*********************************************************** -->
+        <div>
+            <div>
+                <h3>Useful Links</h3>
+                <a href="">About Us</a>
+                <a href="">Our Blog</a>
+                <a href="">Careers</a>
+                <a href="">Corporate Governance</a>
+                <a href="">Pepperfry In the News</a>
+                <a href="">Find A Studio</a>
+                <a href="">Gift Cards</a>
+                <a href="">Brands</a>
+                <a href="">Customer Reviews</a>
+            </div>
+            <div>
+                <h3>Partners</h3>
+                <a href="">Sell With Us</a>
+                <a href="">Become a Franchisee</a>
+                <a href="">Become a Pep Homie</a>
+                <a href="">Design For Us</a>
+                <a href="">Pepperfry Marketplace Policies</a>
+                <a href="">Login to Your Merchant Dashboard</a>
+                <a href="">Important : GST and You</a>
+                <a href="">Corporate Enquiries</a>
+            </div>
+            <div>
+                <h3>Need Help?</h3>
+                <a href="">Contact Us</a>
+                <a href="">Returns & Refund</a>
+                <a href="">Track Your Order</a>
+                <a href="">FAQs</a>
+                <a href="">Buy on Phone</a>
+            </div>
+            <div>
+                <h3>Download App</h3>
+                <a href="https://apps.apple.com/in/app/pepperfry/id972047429"><img
+                        src="https://e7.pngegg.com/pngimages/718/1015/png-clipart-app-store-apple-google-play-apple-text-logo.png"
+                        alt="Download App"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.app.pepperfry&pli=1"><img
+                        src="./images/download.png" alt="Download App"></a>
+            </div>
+        </div>
+        <!-- ************************************div2*********************************************************** -->
+        <div>
+            <div>
+                <h3>Popular Categories</h3>
+                <a href="#">Queen Size Beds, King Size Beds, Coffee Tables, Dining Sets, Recliners, Sofa cum Beds,
+                    Rocking Chairs, Cabinets, Book Shelves, TV Unit, Wardrobes, Outdoor Furniture, Bar Cabinets, Wall
+                    Shelves, Photo Frames, Bed Sheets, Mattresses, Table Cloth, Living Room Furniture, Study Tables,
+                    Dining Room Furniture, Office Furniture, Bed Room Furniture, Dining Table, Beds, Sofas, Sofa Set,
+                    Trundle Bed</a>
+            </div>
+            <div>
+                <h3>Popular Brands</h3>
+                <a href="#">Mintwud, Woodsworth, CasaCraft, Amberville, Mudramark, Bohemiana, Clouddio, Spacewood,
+                    Durian, Green Soul, Godrej Interio, Nilkamal, Orange Tree , HomeTown , Duroflex , Sleepyhead , Peps
+                    India , NestAsia , Jaipur Rugs , Obettee , Eliante by Jainsons , @Home , Bombay Dyeing , Kapoor E
+                    Illuminaton , Ellementry , Chumbak , Philips , Jaipur Fabric , Maspar , India Circus by Krsnaa
+                    Mehta</a>
+            </div>
+            <div>
+                <h3>Cities we deliver to</h3>
+                <a href="#">Bengaluru, Mumbai, Navi Mumbai, Delhi, Hyderabad, Pune, Chennai, Gurgaon, Kolkata, Noida,
+                    Goa, Ghaziabad, Ahmedabad, Coimbatore, Faridabad, Jaipur, Lucknow, Kochi, Visakhapatnam, Chandigarh,
+                    Vadodara, Nagpur, Thiruvananthapuram, Indore, Mysore, Bhopal, Surat, Jalandhar, Patna, Ludhiana,
+                    Nashik, Madurai, Kanpur, Aurangabad and many more</a>
+            </div>
+        </div>
+        <!-- ************************************div3*********************************************************** -->
+        <div>
+            <div>
+                <h3>We Accept</h3>
+                <img src="./images/Capture.PNG" alt="jyfjcjyf">
+            </div>
+            <div>
+                <h3>Like what you see? You'll like us even more here</h3>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/Pepperfry" target="_blank" class="facebook-icon"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/pepperfry" target="_blank" class="twitter-icon"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/Pepperfrytv" target="_blank" class="youtube-icon"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/pepperfry_official/" target="_blank" class="instagram-icon"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/pepperfry" target="_blank" class="linkedin-icon"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://in.pinterest.com/pepperfry/" target="_blank" class="pinterest-icon"><i
+                            class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- ************************************div4*********************************************************** -->
+        <div>
+            <div>
+                <p>Buy In Bulk</p>
+                <p>Write A Testimonial</p>
+            </div>
+            <div>
+                <p>Whitehat</p>
+                <p>Site Map</p>
+                <p>Terms Of Use</p>
+                <p>Privacy Policy</p>
+                <p>Your Data & Security </p>
+                <p>Grievance Redressal</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"> </script>
+</html>
