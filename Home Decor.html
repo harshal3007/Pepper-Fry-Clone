@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/<your-kit-code>.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" /> 
+    <style>
+         * {
+    margin: 0px;
+    margin: auto;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* width: 95%; */
+}
+header{
+    width: 95%;
+    padding-left: 3%;
+    
+}
+/* **************************************** Header-div ************************************************** */
+
+
+#header-div {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    padding: 5px 70px;
+    font-weight: 350;
+}
+
+#header-div>div:nth-child(1) {
+    display: flex;
+    gap: 18px;
+    font-size: 18px;
+}
+
+#header-div>div:nth-child(2) {
+    display: flex;
+    gap: 13px;
+    font-size: 15px;
+}
+
+#header-div a {
+    color: black;
+    text-decoration: none;
+}
+
+#header-div>div:nth-child(1) a:hover {
+    color: rgb(253, 94, 3);
+}
+
+#header-div>div:nth-child(2) a:last-child {
+    color: rgb(253, 94, 3);
+}
+
+#myPopup {
+    display: none;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#closePopup {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(253, 94, 3);
+}
+
+#enterPincode {
+    position: relative;
+    padding-left: 30px;
+}
+
+#enterPincode i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #333;
+}
+/* **************************************** nav ************************************************** */
+  nav{
+    padding: 5px 70px;
+    display: flex;
+    height: 13vh;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    height: 60px;
+    width: 130px;
+    align-items: center;
+}
+.search {
+  display: flex;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #e0dede;
+  border: none;
+  color: #646464;
+  padding: 5px 1rem;
+  border-radius: 10px;
+  width: 600px;
+  height: 100%;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.search_input:hover, .search_input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #e0dede;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: rgb(107, 106, 106);
+}
+
+.search_input:focus + .search_button {
+  background-color: #e0dede;
+}
+
+.search__button {
+  border: none;
+  background-color:  #e0dede;
+  margin-top: .1em;
+  height: 60%;
+  padding: 4px 0px;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #0a0a0a;
+}
+
+.icon{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+  width: 21%;
+  padding: 10px;
+  gap: 20px;
+} 
+.icon div:hover{
+  cursor: pointer;
+}
+/* **************************************** Footer ************************************************** */
+footer{
+  background-color: #f5f5f5;
+  padding-top: 40px;
+  width: 100%;
+}
+
+footer>div:nth-child(1){
+  display: flex;
+  width: 87%;
+  height: 300px;
+  /* border: 1px solid black; */
+  margin: auto;
+  font-weight: 300;
+}
+footer>div:nth-child(1) div{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 25%;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 2px;
+  gap: 10px 0px;
+  
+}
+footer a{
+  color: #737272;
+  text-decoration: none;
+}
+footer>div img{
+  height: 10vh;
+  width: 130px;
+}
+footer>div:nth-child(2){
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  font-weight: 300;
+}
+footer>div:nth-child(2) div{
+  width: 30%;
+  margin: auto;
+}
+footer>div:nth-child(3){
+  display: flex;
+  width: 87%;
+  margin: auto;
+  margin-top: 40px;
+  font-weight: 300;
+  padding: 40px 0px;
+  border-top: 1px solid rgb(193, 192, 192);
+  border-bottom: 1px solid rgb(193, 192, 192);
+}
+footer>div:nth-child(3)>div{
+  width: 70%;
+  margin: auto;
+  height: 23vh;
+}
+footer>div:nth-child(3) img{
+ height: 80%;
+width: 80%;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  margin-top:8px;
+
+}
+.footer-icons a{
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facebook-icon{
+  background-color: rgb(27, 120, 241);
+} 
+.youtube-icon{
+  background-color: rgb(241, 27, 27);
+}
+ .twitter-icon{
+  background-color: rgb(87, 146, 224);
+ } 
+ .instagram-icon{
+  background-color: rgb(241, 27, 173);
+ }
+ .linkedin-icon{
+  background-color: rgb(6, 73, 161);
+ }
+ .pinterest-icon{
+  background-color: rgb(241, 27, 27);
+ }
+ .footer-icons a:hover{
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+}
+.fab {
+  font-size: 20px;
+}
+footer>div:nth-child(4){
+  display: flex;
+  width: 87%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 40px ;
+  font-weight: 300;
+  justify-content: space-between;
+}
+footer>div:nth-child(4) div{
+ display: flex;
+ gap: 10px;
+ color: #737272;
+}
+.dropdown {
+  width: 99%;
+  margin: auto;
+  position: relative;
+  z-index: 999;
+  border-bottom: 1px solid #eae7e7;
+  border-top: 1px solid #eae7e7;
+}
+
+.dropdown ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+.dropdown ul li {
+  position: relative;
+}
+
+.dropdown ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dropdown ul li>a:hover {
+  background-color: #f2f2f2;
+  border-bottom: 2.5px solid #ff8a00;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: max-content;
+  z-index: 1;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.col h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.dropdown-content>div>div a {
+  display: block;
+  padding: 0px 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(138, 133, 133);
+  text-decoration: none;
+}
+
+.col>div {
+  margin-top: 25px;
+}
+
+.col>div:first-child {
+  margin-top: 0px;
+}
+
+.col a:hover {
+  color: #ff8a00;
+}
+        /* *****************middle page******************/
+        /* .total{
+            width: 95%;
+            margin: auto;
+           } */
+          .cap1,.cap2,.cap3,.cap4,.cap5,.cap6,.cap7,.cap8,.cap9{
+           display: flex;
+           gap: 2%;
+           }
+           img{
+            width: 100%;
+           }
+           
+           #side{
+                width: 25%;
+                margin-bottom: 5%;
+            }
+            #visa{
+                width: 40%;
+                display: flex;
+            } 
+            #LastImages{
+                width: 40%;
+            }
+
+    </style>
+</head>
+<body>
+     <!-- ***********************************Header********************************************************** -->
+     <header>
+        <!-- ***********************************header-div********************************************************** -->
+            <div id="header-div">
+                <div>
+                    <a href="#">Sell on Pepperfry</a>
+                    <a href="#">Become a Franchisee</a>
+                    <a href="#">Buy in Bulk</a>
+                    <a href="#">Find a Studio</a>
+                    <a href="#">Find Design Inspiration</a>
+                </div>
+                <div>
+                    <a href="#">Enter pincode</a>
+                    <a href="#">Find Pepperfry studio</a>
+                </div>
+            </div>
+        <!-- ***********************************Nav********************************************************** -->
+            <nav>
+                <div>
+                    <img src="pepperflylogo.jpg" alt="logo"> 
+                    <!-- <h1 style="color:rgb(253, 94, 3);;font-size: 40px;font-style: oblique;">Pepperfry</h1> -->
+                </div>
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="Your door to happiness opens with a search">
+                    <button class="search__button">
+                        <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="icon">
+                    <div class="icon_box">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="icon_box">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="icon_box">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="icon_box">
+                        <i class="fas fa-truck-moving"></i>
+                    </div>
+                </div>
+            </nav>
+        <!-- ***********************************Dropdown Menu********************************************************** -->
+        <div class="dropdown">
+          <ul>
+              <li>
+                  <a href="./FurniShings.html">Furniture</a>
+                  <div class="dropdown-content">
+                      <div class="row">
+                          <div class="col">
+                              <div>
+                                  <h6>Sofas</h6>
+                                  <a href="#">3 Seater Sofas</a>
+                                  <a href="#">2 Seater Sofas</a>
+                                  <a href="#">1 Seater Sofas</a>
+                                  <a href="#">Sofa Sets</a>
+                                  <a href="#">LHS Sectionals</a>
+                                  <a href="#">RHS Sectionals</a>
+                                  <a href="#">Corner Sofas</a>
+                                  <a href="#">Chaise Loungers</a>
+                                  <a href="#">Sofa Cum Beds</a>
+                                  <a href="#">Futons</a>
+                              </div>
+                              <div>
+                                  <h6>Recliners</h6>
+                                  <a href="#">1 Seater</a>
+                                  <a href="#">2 Seater</a>
+                                  <a href="#">3 Seater</a>
+                                  <a href="#">Recliner Sets</a>
+                              </div>
+
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Sofa Chairs</h6>
+                                  <a href="#">Wing Chairs</a>
+                                  <a href="#">Lounge Chairs</a>
+                                  <a href="#">Slipper Chairs</a>
+                                  <a href="#">Barrel Chairs</a>
+                              </div>
+                              <div>
+                                  <h6>Office Chairs</h6>
+                                  <a href="#">Ergonomic Chairs</a>
+                                  <a href="#">Executive Chairs</a>
+                                  <a href="#">FutTraining Chairsons</a>
+                                  <a href="#">Guest Chairs</a>
+                                  <a href="#">Cantilever Chairs</a>
+                              </div>
+                              <div>
+                                  <h6>Gaming Chairs</h6>
+                              </div>
+                              <div>
+                                  <h6> Bean Bags</h6>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Chairs</h6>
+                                  <a href="#">Arm Chairs</a>
+                                  <a href="#">Rocking Chairs</a>
+                                  <a href="#">Folding Chairs</a>
+                                  <a href="#">Iconic Chairs</a>
+                                  <a href="#">Cafe Chairs</a>
+                              </div>
+                              <div>
+                                  <h6>Seating</h6>
+                                  <a href="#">Seating</a>
+                                  <a href="#">Benches</a>
+                                  <a href="#">Ottomans</a>
+                                  <a href="#">Pouffes</a>
+                                  <a href="#">Recamiers</a>
+                                  <a href="#">Foot Stools</a>
+                                  <a href="#">Seating Stools</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Centre Tables</h6>
+                                  <a href="#">Coffee Tables</a>
+                                  <a href="#">Coffee Table Sets</a>
+                                  <a href="#">End Tables</a>
+                                  <a href="#">Nest of Tables</a>
+                                  <a href="#">C Shaped Tables</a>
+                              </div>
+                              <div>
+                                  <h6>TV & Media Units</h6>
+                                  <a href="#">TV Consoles</a>
+                                  <a href="#">TV Shelves</a>
+                                  <a href="#">TV Units</a>
+                              </div>
+                              <div>
+                                  <h6>Shoe Racks</h6>
+                                  <a href="#">Shoe Cabinets</a>
+                                  <a href="#">Open Shoe Racks</a>
+                                  <a href="#">Shoe Rack & Seat</a>
+                                  <a href="#">Tilt Out Racks</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Dining Sets</h6>
+                                  <a href="#">4 Seater Sets</a>
+                                  <a href="#">6 Seater Sets</a>
+                                  <a href="#">8 Seater Sets</a>
+                                  <a href="#">2 Seater Sets</a>
+                              </div>
+                              <div>
+                                  <h6>Dining Chairs</h6>
+                              </div>
+                              <div>
+                                  <h6>Dining Tables</h6>
+                              </div>
+                              <div>
+                                  <h6>Console Tables</h6>
+                              </div>
+                              <div>
+                                  <h6>Bar Furniture</h6>
+                                  <a href="#">Bar Cabinets</a>
+                                  <a href="#">Bar Trolleys</a>
+                                  <a href="#">Bar Stools</a>
+                                  <a href="#">Bar Table Sets</a>
+                                  <a href="#">Wine Racks</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Beds</h6>
+                                  <a href="#">Queen Size Beds</a>
+                                  <a href="#">King Size Beds</a>
+                                  <a href="#">Single Beds</a>
+                                  <a href="#">Poster Bed</a>
+                                  <a href="#">Folding Bed</a>
+                              </div>
+                              <h6>Bedside Tables</h6>
+                              <a href="#">Night Stands</a>
+                              <a href="#">Bedside Chests</a>
+                              <a href="#">Dressing Tables</a>
+                              <div>
+                                  <h6>Dressers</h6>
+                                  <a href="#">Dressing Cabinets</a>
+                                  <a href="#">Dressing Consoles</a>
+                                  <a href="#">Dressing Units</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Wardrobes</h6>
+                                  <a href="#">1 Door</a>
+                                  <a href="#">2 Door</a>
+                                  <a href="#">3 Door</a>
+                                  <a href="#">4 Door</a>
+                                  <a href="#">4+ Door</a>
+                                  <a href="#">Sliding Door</a>
+                                  <a href="#">Corner Sofas</a>
+                                  <a href="#">Chaise Loungers</a>
+                                  <a href="#">Sofa Cum Beds</a>
+                                  <a href="#">Futons</a>
+                              </div>
+                              <div>
+                                  <h6>Cabinetry</h6>
+                                  <a href="#">Sideboards</a>
+                                  <a href="#">Chest of Drawers</a>
+                                  <a href="#">Plastic Cabinets</a>
+                                  <a href="#">Book Shelves</a>
+                                  <a href="#">Book Cases</a>
+                                  <a href="#">Kitchen Cabinets</a>
+                                  <a href="#">Office Cabinets</a>
+                                  <a href="#">Trunks</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Study Tables</h6>
+                                  <a href="#">Writing Tables</a>
+                                  <a href="#">Computer Tables</a>
+                                  <a href="#">Hutch Desks</a>
+                                  <a href="#">Foldable Tables</a>
+                                  <a href="#">Wall Mounted</a>
+                                  <a href="#">Portable Tables</a>
+                                  <a href="#">Office Tables</a>
+                              </div>
+                              <div>
+                                  <h6>Outdoor</h6>
+                                  <a href="#">Swings</a>
+                                  <a href="#">Hammocks</a>
+                                  <a href="#">Tables</a>
+                                  <a href="#">Table & Chair Sets</a>
+                                  <a href="#">Seating</a>
+                                  <a href="#">Plastic Chairs</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Kids & Teens</h6>
+                                  <a href="#">Cribs</a>
+                                  <a href="#">Beds</a>
+                                  <a href="#">Bunk Beds</a>
+                                  <a href="#">Studyy</a>
+                                  <a href="#">Wardrobes</a>
+                                  <a href="#">Book Shelves</a>
+                                  <a href="#">Storage</a>
+                                  <a href="#">Seating</a>
+                                  <a href="#">Bean Bags</a>
+                              </div>
+                              <div>
+                                  <h6>Furniture Care</h6>
+                                  <a href="#">Furniture Care Kit</a>
+                                  <a href="#">Sofa Spa</a>
+                                  <a href="#">Chair Spa</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li><a href="#">Home Décor</a></li>
+              <li><a href="#">Lamps & Lighting</a></li>
+              <li><a href="#">Kitchen & Dining</a></li>
+              <li><a href="#">Furnishings</a></li>
+              <li><a href="#">Mattresses</a></li>
+              <li><a href="#">Appliances</a></li>
+              <li><a href="#">Pets</a></li>
+              <li><a href="#">Modular</a></li>
+              <li><a href="#">Gift Cards</a></li>
+          </ul>
+      </div>
+        <!-- ********************Static Home Page******************************** -->
+        <div class="cap1">
+            <div id="side">
+                   <h1>HomeDecor</h1><br>
+                    <p>Vases</p>
+                    <p>Figurines</p>
+                    <p>Collectibles</p>
+                    <p>Showpieces</p>
+                    <p>Photo Frames</p>
+                    <p>Screens & Dividers</p>
+                    <p>Table Organizers</p>
+                    <p>Festive Decor</p>
+                    <p>Spiritual</p>
+                    <p>Prayer Essentials</p>
+                    <p>Candles & Diffusers</p>
+                    <p>Candle Stands</p>
+                    <p>Pots & Planters</p>
+                    <p>Natural Plants</p>
+                    <p>Artificial Plants&Flowers</p>
+                    <p>Garden Decor</p>
+            </div><hr>
+            <div id="Dogimg">
+                 <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Decor_banner_web_05122022.jpg" alt="">
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Festive Edits</h1><br>
+        <div class="cap2">
+            <div id="A">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/decor_web_section3_14102022_1.jpg" alt="">
+                <h3>Decorative Mirrors</h3>
+                <p>200+ Options</p>
+            </div>
+            <div id="A">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/decor_web_section3_14102022_2.jpg" alt="">
+                <h3>Home Fragrances</h3>
+                <p>500+ Options</p>
+            </div>
+            <div id="A">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/decor_web_section3_14102022_3.jpg" alt="">
+                <h3>Candle Holders</h3>
+                <p>200+ Options</p>    
+            
+            </div>
+            <div id="A">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/decor_web_section3_14102022_4.jpg" alt="">
+                <h3>Diyas</h3>
+                <p>150+ Options</p>
+            </div>
+            <div id="A">
+                <img style="height: 200px;width: 230px;" src="https://ii3.pepperfry.com/media/wysiwyg/banners/Decor_section3_web_06122022_5.jpg" alt="">
+                <h3>Pooja Mandirs</h3>
+                <p>100+ Options</p>
+            </div>
+            <div id="A">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/decor_web_section3_14102022_6.jpg" alt="">
+                <h3>Urlis, Pooja Thali & More</h3>
+                <p>80+ Options</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Deal Of The Day</h1><br>
+        <div class="cap3">
+            <div id="B">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Decor_Deal19_web_19012023_1.jpg" alt="">
+                <h3>Analog Wall Clock</h3>
+                <p>Get This Item For 309Rupee</p>
+            </div>
+            <div id="B">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Decor_Deal19_web_19012023_2.jpg" alt="">
+                <h3>Ceramic Wall Hook </h3>
+                <p>Get This Item For 299Rupee</p>
+            </div>
+            <div id="B">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Decor_Deal19_web_19012023_3.jpg" alt="">
+                <h3>Wall Stickers</h3>
+                <p>Get This Item For 319Rupee</p>
+            </div>
+            <div id="B">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Decor_Deal19_web_19012023_4.jpg" alt="">
+                <h3>Art panel</h3>
+                <p>Get this itens For 299Ruppe.</p>
+            </div>
+            
+           
+        </div><br>
+        <h1 style="font-size: 30px;">Trends In Decor</h1><br>
+        <div class="cap4">
+            <div id="C">
+                <img style="height: 350px;width: 300px;" src="https://ii3.pepperfry.com/media/wysiwyg/banners/Decor_section5_web_06122022_1.jpg" alt="">
+                <h3>Christmas Decor</h3>
+                <p>40+ Options</p>
+            </div>
+            <div id="C">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Decor_trend_web_05122022_2.jpg" alt="">
+                <h3>Metallic Vases</h3>
+                <p>500+ Options</p>
+            </div>
+            <div id="C">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/decor_web_section5_14102022_3.jpg" alt="">
+                <h3>Floor Planters</h3>
+                <p>80+ Options</p>
+            </div>
+            <div id="C">
+                <img style="height: 350px;width: 300px;" src="https://ii3.pepperfry.com/media/wysiwyg/banners/Decor_section5_web_06122022_4.jpg" alt="">
+                <h3>Wall Clocks</h3>
+                <p>1100+ Options</p>
+            </div>
+            
+        </div><br>
+        <h1 style="font-size: 30px;">New Arrivals</h1><br>
+        <div class="cap5">
+            <div id="D">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/decor_web_section6_14102022_1.jpg" alt="">
+                <h3>Wooden Wall Art </h3>
+                <p>90+ Options</p>
+            </div>
+            <div id="D">
+              <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Decor_section6_web_06122022_2.jpg" alt="">
+              <h3>Table Photo Frames </h3>
+              <p>160+ Options</p>
+          </div>
+          <div id="D">
+            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Decor_section6_web_06122022_3.jpg" alt="">
+            <h3>Floating Wall Shelves</h3>
+            <p>300+ Options</p>
+        </div>
+        <div id="D">
+          <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Decor_section6_web_06122022_4.jpg" alt="">
+          <h3>Ceramic Wall Plates</h3>
+          <p>200+ Options</p>
+      </div>
+            
+        </div><br>
+        <h1 style="font-size: 30px;">Bestsellers</h1><br>
+        <div class="cap6">
+            <div id="E">
+              <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/decor_web_section7_14102022_1.jpg" alt="">
+            </div>
+            <div id="E">
+              <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Decor_bestseller_web_05122022_2_n.jpg" alt="">
+            </div>
+            <div id="E">
+              <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Decor_bestseller_web_05122022_3_n.jpg" alt="">
+            </div>
+            
+        </div><br>
+        <h1 style="font-size: 30px;">Shop By Brand</h1><br>
+        <div class="cap7">
+          <div id="F">
+            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Decor_section8_web_06122022_1.jpg" alt="">
+            <h3>70+ Options</h3>
+            <p>For Vases</p>
+          </div>
+          <div id="F">
+            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Decor_section8_web1_06122022_2.jpg" alt="">
+            <h3>20+ Options</h3>
+            <p>For Wall Art</p>
+          </div>
+          <div id="F">
+            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Decor_section8_web_06122022_3.jpg" alt="">
+            <h3>50+ Options</h3>
+            <p>For Figurines</p>
+          </div>
+          <div id="F">
+            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Decor_section8_web1_06122022_4.jpg" alt="">
+            <h3>10+ Options</h3>
+            <p>For Planters</p>
+          </div>
+          <div id="F">
+            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Decor_section8_web_06122022_5.jpg" alt="">
+            <h3>300+ Options</h3>
+            <p>For Artificial Plants</p>
+          </div>
+          <div id="F">
+            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Decor_section8_web_06122022_6.jpg" alt="">
+            <h3>100+ Options</h3>
+            <p>For Natural Plants</p>
+          </div>
+          
+        </div><br>
+        <h1 style="font-size: 30px;">Customers Speak</h1><br>
+    <div class="cap8">
+        <div id="G">
+            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_7.jpg" alt="">
+            <h3>Bought these two grey puffy stools from pepperfry. Found them to be surprisingly strong! Blends perfectly with our theme, too!</h3>
+            <h4>Suman Senapatia</h4>
+            <p>Visakhapatnam</p>
+        </div>
+        <div id="G">
+            <img style="height: 200px;width: 500px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/happy_customer_block_2_2906_0222.png" alt="">
+            <h3>I purchased Candy Study Chair in Pink Colour by Alex Daisy from pepperfry looks awesome and My daughter loves and spend most of the time during her home school sessions. I am happy with my choice to give a Gift to my daughter.</h3>
+            <h4>Satya Madhana</h4>
+            <p>Secunderabad</p>
+        </div>
+        <div id="G">
+            <img style="height: 200px;" src="https://ii3.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_9.jpg" alt="">
+            <h3>Purchased an ergonomic chair, I thought it would not be fitting for me but once it got delivered, got it assembled then and there. Now, I am just loving it. Will suggest pepperfry.</h3>
+            <h4>Baba Kattubadi</h4>
+            <p>Hyderabad</p>
+        </div>
+    </div><br>
+    <h1 style="font-size: 30px;">Need Help Buying?</h1><br>
+    <div class="cap9">
+        <div id="H">
+            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_1.jpg" alt="">
+            <p>Here's How To Choose The Right Sofa</p>
+        </div>
+        <div id="H">
+            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_2.jpg" alt="">
+            <p>How To Buy A Perfect Bed For Your Room</p>
+        </div>
+        <div id="H">
+            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_3.jpg" alt="">
+            <p>Your Guide To Buy The Perfect Mattress</p>
+        </div>
+        <div id="H">
+            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_4.jpg" alt="">
+            <p>Everything About Cabinets And Sideboards</p>
+        </div>
+        <div id="H">
+            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_5.jpg" alt="">
+            <p>What To Look For While Buying A Chair</p>
+        </div>
+        <div id="H">
+            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_6.jpg" alt="">
+            <p>Talk To Our Expert</p>
+        </div>
+    </div><br>
+        <h2>Buy Home Decor Online At Best Price In India</h2>
+        <br>
+        <p>A home is what you make it! You spend so many hours every single day in your haven, shouldn't it be a pleasant and appealing place to exist? Your home, your sanctuary should be a beautiful place to live in a place where you feel a sense of calm and belongingness, a sense of pleasure in plain existence. Therefore you should pay special attention to your home and its interiors, and create a charming place for yourself by decorating it to your heart's desire.</p><br>
+        <p>Be it small or big, decorate your home with stylish home decor and enhance its appeal for anyone who spends time there! From the floor to walls and the ceiling, decorate your home all around with the choicest furnishing and decor items that you can buy from Pepperfry.</p><br>
+        <p>Pepperfry has the largest collection of home decor products carefully curated to please every taste, decor and furniture, and complement the unique style of every space. From traditional, modern and contemporary, to Scandinavian and industrial home interiors, find products to match whatever style you've picked for your home. Be it your living room, bedroom or your bath, we have an extensive range of products for every nook and corner of your home. Check out the collection and indulge in some home decor online shopping for your abode.</p><br>
+        <h2>Types Of Home Decor Online At Pepperfry</h2><br>
+        <p>You are provided with a galore of Decor options that you can choose from at Pepperfry. By incorporating our unique selection of affordable home decoration items online in India, which features a wide choice of lamps and lighting, tableware, pots and planters, wall arts, wall frames, photo frames, bed sheets, and many other home decoration items, you can add flair to your home. Be it setting up your kitchen, bedroom, living room, kids room, or bathroom; you can select products that will blend along with your home. Following are some Decor ideas that you can give a thought to:</p><br>
+        <h2>Garden Decor</h2><br>
+        <p>If your house features an open space or balcony, you can own a mini garden. You can decorate it with the alluring garden decor items such as garden figurines, pots and planters, artificial flowers, artificial grass, bird houses, decorative pebbles, and outdoor lighting.</p><br>
+        <h3>Kitchen Decor</h3><br>
+        <p>Browse through a lavish collection of homeware to set up your kitchen. You can choose from products such as dinner table, utensil holders, kitchen baskets, everyday glasses, pitchers and decanters, mason jars, coasters, salt and pepper shakers, table linen, and so on. Decorate your kitchen with subtle lighting and simple wall paintings to give it a chic look.</p><br>
+        <h3>Bedroom Decor</h3><br>
+        <p>Bedroom decoration can be a tedious task because if not set right, it can mess up with your sleeping and dressing. Pepperfry has a wide range of bedroom furniture and bedding. All of the bedroom decoration items available online in India at Pepperfry, from wall decor to tableware, have a significant impact on the home.</p><br>
+        <p>Amazing things can be found for bedroom decoration in our online assortment of home decor, which we curate to meet your needs. You can choose from different bed types, such as upholstered, sofa cum bed, trundle, loft, bunk, novelty, and others. There are even cribs available for the kid's room. Bedding options include mattresses, duvets, comforters, mattress protectors, duvet covers, pillows, and bed wedges. Our selection of additional bedroom decoration items includes curtains, wall decor, mirror frames, lamps, and lights, among other things.</p><br>
+        <p>Our store's selection of affordable bedroom decoration will instantly add charm to any room in your house. Lighting plays an important role; the placement of bedside lamps should be proper. You can even install wall sconces or hanging lights to give it a luxe touch. Choose from bedside tables, study tables, and bean bags to perfectly match your theme.</p><br>
+        <h3>Living Room Decor</h3><br>
+        <p>You can style up your living room with plush decor such as recamiers, lounge chairs, end tables, console tables, coffee tables, cabinets, shoe racks, show pieces, planters, indoor fountain, wall art, & photo frames. Add a chandelier, hanging lantern, or any suitable lighting, and you're ready to go.</p><br>
+        <h3>Things to know before buying home decor online</h3><br>
+        <p>A home is incomplete without some tasteful & well-organized home decor to decorate it. From classy furniture to wall art to clocks and mirrors, home decor is the most essential part of elevating your home's decoration. The best wood guarantees longevity, and the various finish choices for these bedroom decoration items make them sparkle even more. While there are several things to keep in mind such as style, design, etc., when you buy home decor items, here are the primary factors to consider before buying home decoration items:-</p><br>
+        <p>Size & Weight</p>
+        <p>Utility</p>
+        <p>Durability & Long-lasting materials</p>
+        <p>Reasonable pricing</p>
+        <p>Matching with other home decor items</p><br>
+        <h3>Decorate Your Entire Home With Home Decor at Pepperfry</h3><br>
+        <p>On living room and bedroom decoration items, we also offer additional holiday discounts. We have a vast range of home decor products in a huge variety of choices for you. Shop for all the different decor elements on Pepperfry to prettify your home space:</p><br>
+        <h3>Doll Up Your Walls</h3><br>
+        <p>Any room decor is incomplete without nicely done up walls. Walls make up a large space in any room, one shouldn't leave them out when doing home interiors. Keeping them empty and bare makes the space look dull, boring and impersonal. Decorated walls on the other hand can make it look much more lively and cheerful.</p><br>
+        <p>Walls are like large canvases that you can play with in countless ways, such as by including photo frames, paintings, art prints, murals, wall accents, even stylish wall clocks. Create masterful walls with wall decor elements from Pepperfry where you'll find a unique collection in a range of products.</p><br>
+        <h3>Add Stylish Accents To Your Home</h3><br>
+        <p>Stylish accents that populate your home can make it look very attractive and appealing. There are a plethora of accent options waiting for you to discover, you'd literally be spoilt for choice! When selecting these decorative accents for your home, keep in mind that your home should be a reflection of you, your likings and tastes, your personality and choice, so go for the elements that align with your taste. Do</p><br>
+        <h3>Fantastic Furnishing</h3><br>
+        <p>Furnishing is a fantastic way to decorate your home and add to your interiors. From furnishing to upholstery, carpets, curtains and bed linens, shop for the chic and stylish furnishings for pretty home interiors. Get above the basics and style your home in classy ways with furniture, decor, accents and much more from Pepperfry.</p><br>
+        <h3>Brighten Up Your Home</h3><br>
+        <p>Lighting is essential, not only for practical reasons, but for aesthetic purposes as well. Lights play an important role in the effect of interiors. Brighten up your home with lights that beautify your home with their visual effect.</p><br>
+        <h3>Usher In Some Greens</h3><br>
+        <p>We also have a wide range of home garden house decor available, from pots and planters to natural and artificial greens and unique decorative elements.</p><br>
+        <h3>Create A Tranquil Home</h3><br>
+        <p>Looking for tranquillity? Add some spiritual elements to your home that create the perfect aura of positivity in your home. From Mandirs and pooja essentials to religious idols, painting and prints, frames, and feng shui, find all spiritual essentials right here.</p><br>
+        <h3>The Most Popular Home Decor Ideas For 2022</h3><br>
+        <p>While we're all fond of various home decor items, it can be a daunting task to redecorate your home correctly. Home decoration items are essential components in creating a well-decorated home. Wooden Street offers an online assortment of Indian home decoration items that can adorn your space with charm. Everything in the home design online collection, from furniture to wall decor accents, has meaning and can turn any plain house into a magnificent castle. Home decoration items greatly contribute to the home's overall sense of completion. Based on the ongoing trends, here are the most popular and used home decoration ideas of this year:-</p><br>
+        <h3>Wall Art:</h3><br>
+        <p>Adding wall art to your home's interiors gives it a very interesting touch. Besides being a great talking point, it adds value & aesthetic value to your home by adding compelling decoration to it.</p><br>
+        <h3>Photo Frames:</h3><br>
+        <p>If you have too many blank, spacious walls with no furniture against it, choose to create a gallery wall. Hang up your favourite memories in photo frames, a few creepers or plant pots, and some fairy lights to add a cottage-core, artsy vibe to your home. After all, photo frames are the best kind of home decoration to make a house look more personalised.</p><br>
+        <h3>Dining Tables:</h3><br>
+        <p>Gone are the days when dining tables or even side tables that are large and occupy too much space. For a spacious look even in the most compact spaces, opt for a table set with a modified design to help tuck in or tuck away the appropriately sized furniture into the corner without looking bulky.</p><br>
+        <h3>Mirrors:</h3><br>
+        <p>Adding elongated mirrors in the right spot of your living room or bedroom can create the illusion of a wider and more spacious area. Perfect to check out your outfit from time to time and to give an expansive look to your home, add wall-to-wall mirrors for a modern look in your home.</p><br>
+        <h3>Why Should You Buy Home Decor At Pepperfry Online?</h3><br>
+        <p>While there is a wide variety of online and outlet stores selling various home decor products, it is essential to choose a destination that ensures premium-quality products with the most trending designs that offer the best utility to you. All of the home decoration items available online in India at Pepperfry, from wall decor to tableware, have a significant impact on the home. Amazing things can be found in our online assortment of home decor, which we curate to meet your needs. And Pepperfry is just the destination you're looking for. Here are some reasons to shop for home decor from Pepperfry:-</p><br>
+        <p>Premium quality products available at reasonable & budgeted prices.</p>
+        <p>Refreshing & latest home decor designs that keep up with the trends.</p>
+        <p>A colossal collection of home decoration to offer the best to every person's unique taste.</p>
+        <p>Complete your home decor with the best decoration items such as clocks, wall art, table decor, mirrors, and much more at Pepperfry online!</p><br>
+        <h3>Frequently Asked Question (FAQs)</h3>
+        <h3>How To Select Colours For Home Decor?</h3><br>
+        <p>Home decor depends on factors such as your wall paints, textures & what colours have been used. You must select home decoration based on the colour palette and tones used to furnish your home.</p><br>
+        <h3> Which Home Decor Items Add A Modern Look To Your House?</h3><br>
+        <p>Modern houses usually have a minimal style and structural design. From modified furniture, to subtle & uniform tone wall paints, to classic glassware & modest upholstery, these home decor items add a modern look to your home.</p><br><br>
+         
+
+     </header>    
+        <!-- ***********************************footer************************************* -->
+        <footer>
+            <!-- ***********************************div1********************************************************** -->
+            <div>
+                <div>
+                    <h3>Useful Links</h3>
+                    <a href="">About Us</a>
+                    <a href="">Our Blog</a>
+                    <a href="">Careers</a>
+                    <a href="">Corporate Governance</a>
+                    <a href="">Pepperfry In the News</a>
+                    <a href="">Find A Studio</a>
+                    <a href="">Gift Cards</a>
+                    <a href="">Brands</a>
+                    <a href="">Customer Reviews</a>
+                </div>
+                <div>
+                    <h3>Partners</h3>
+                    <a href="">Sell With Us</a>
+                    <a href="">Become a Franchisee</a>
+                    <a href="">Become a Pep Homie</a>
+                    <a href="">Design For Us</a>
+                    <a href="">Pepperfry Marketplace Policies</a>
+                    <a href="">Login to Your Merchant Dashboard</a>
+                    <a href="">Important : GST and You</a>
+                    <a href="">Corporate Enquiries</a>
+                </div>
+                <div>
+                    <h3>Need Help?</h3>
+                    <a href="">Contact Us</a>
+                    <a href="">Returns & Refund</a>
+                    <a href="">Track Your Order</a>
+                    <a href="">FAQs</a>
+                    <a href="">Buy on Phone</a>
+                </div>
+                <div>
+                    <h3>Download App</h3>
+                    <a href="https://apps.apple.com/in/app/pepperfry/id972047429"><img
+                            src="https://e7.pngegg.com/pngimages/718/1015/png-clipart-app-store-apple-google-play-apple-text-logo.png"
+                            alt="Download App"></a>
+                     <img style="padding-right: 0%;" src="https://tse2.mm.bing.net/th?id=OIP.GZhmkG200Ppz-ezObC3JfQHaCi&pid=Api&P=0" alt="">
+                </div>
+            </div>
+            <!-- ***********************************div2********************************************************** -->
+            <div>
+                <div>
+                    <h3>Popular Categories</h3>
+                    <a href="#">Queen Size Beds, King Size Beds, Coffee Tables, Dining Sets, Recliners, Sofa cum Beds,
+                        Rocking Chairs, Cabinets, Book Shelves, TV Unit, Wardrobes, Outdoor Furniture, Bar Cabinets, Wall
+                        Shelves, Photo Frames, Bed Sheets, Mattresses, Table Cloth, Living Room Furniture, Study Tables,
+                        Dining Room Furniture, Office Furniture, Bed Room Furniture, Dining Table, Beds, Sofas, Sofa Set,
+                        Trundle Bed</a>
+                </div>
+                <div>
+                    <h3>Popular Brands</h3>
+                    <a href="#">Mintwud, Woodsworth, CasaCraft, Amberville, Mudramark, Bohemiana, Clouddio, Spacewood,
+                        Durian, Green Soul, Godrej Interio, Nilkamal, Orange Tree , HomeTown , Duroflex , Sleepyhead , Peps
+                        India , NestAsia , Jaipur Rugs , Obettee , Eliante by Jainsons , @Home , Bombay Dyeing , Kapoor E
+                        Illuminaton , Ellementry , Chumbak , Philips , Jaipur Fabric , Maspar , India Circus by Krsnaa
+                        Mehta</a>
+                </div>
+                <div>
+                    <h3>Cities we deliver to</h3>
+                    <a href="#">Bengaluru, Mumbai, Navi Mumbai, Delhi, Hyderabad, Pune, Chennai, Gurgaon, Kolkata, Noida,
+                        Goa, Ghaziabad, Ahmedabad, Coimbatore, Faridabad, Jaipur, Lucknow, Kochi, Visakhapatnam, Chandigarh,
+                        Vadodara, Nagpur, Thiruvananthapuram, Indore, Mysore, Bhopal, Surat, Jalandhar, Patna, Ludhiana,
+                        Nashik, Madurai, Kanpur, Aurangabad and many more</a>
+                </div>
+            </div>
+            <!-- ***********************************div3********************************************************** -->
+            <div>
+                <div id="visa">
+    
+                    <div>
+                        <h3>We Accept</h3><br>
+                        <img style="height: 50%;width: 35%;" src="https://tse3.mm.bing.net/th?id=OIP.ah9LG1cJajShwcxSZQ2WeAHaHa&pid=Api&P=0" alt=""><br><br>
+                    <img style="height: 40%;width: 35%;" src="https://tse2.mm.bing.net/th?id=OIP.9FNJf35UgibeDuU6t7zh_wHaCO&pid=Api&P=0" alt="jyfjcjyf"><br>
+                    
+                    </div>
+                    <div>
+                    <img style="padding-right: 200%;" src="projectVisa.jpg" alt="">
+                        
+                    </div>
+                </div>
+            
+                <div id="LastImages">
+                    <h3>Like what you see? You'll like us even more here</h3><br><br>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/Pepperfry" target="_blank" class="facebook-icon"><i
+                            class="fab fa-facebook-f"></i></a>
+    
+                        <a href="https://twitter.com/pepperfry" target="_blank" class="twitter-icon"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/Pepperfrytv" target="_blank" class="youtube-icon"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/pepperfry_official/" target="_blank" class="instagram-icon"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/pepperfry" target="_blank" class="linkedin-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://in.pinterest.com/pepperfry/" target="_blank" class="pinterest-icon"><i
+                                class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div> 
+            
+    
+            <!-- ***********************************div4********************************************************** -->
+            
+            <div class="top14">
+                <div>
+                    <p style="word-spacing: 55px">BuyInBulk WriteATestimonial</p>
+                </div>
+                <div>
+                    <p style="word-spacing: 55px">WhitehatSiteMap TermsOfUse PrivacyPolicy YourData&Security GrievanceRedressal</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    
+</body>
+</html>
+<script>
+
+</script>

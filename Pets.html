@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/<your-kit-code>.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" /> 
+        <link rel="shortcut icon" type="image/x-icon" href="./images/mn.png">
+  <style>
+    
+         * {
+    margin: 0px;
+    margin: auto;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* width: 95%; */
+}
+header{
+    width: 95%;
+    padding-left: 3%;
+    
+}
+/* **************************************** Header-div ************************************************** */
+
+
+#header-div {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    padding: 5px 70px;
+    font-weight: 350;
+}
+
+#header-div>div:nth-child(1) {
+    display: flex;
+    gap: 18px;
+    font-size: 18px;
+}
+
+#header-div>div:nth-child(2) {
+    display: flex;
+    gap: 13px;
+    font-size: 15px;
+}
+
+#header-div a {
+    color: black;
+    text-decoration: none;
+}
+
+#header-div>div:nth-child(1) a:hover {
+    color: rgb(253, 94, 3);
+}
+
+#header-div>div:nth-child(2) a:last-child {
+    color: rgb(253, 94, 3);
+}
+
+#myPopup {
+    display: none;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#closePopup {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(253, 94, 3);
+}
+
+#enterPincode {
+    position: relative;
+    padding-left: 30px;
+}
+
+#enterPincode i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #333;
+}
+/* **************************************** nav ************************************************** */
+  nav{
+    padding: 5px 70px;
+    display: flex;
+    height: 13vh;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    height: 60px;
+    width: 130px;
+    align-items: center;
+}
+.search {
+  display: flex;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #e0dede;
+  border: none;
+  color: #646464;
+  padding: 5px 1rem;
+  border-radius: 10px;
+  width: 600px;
+  height: 100%;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.search_input:hover, .search_input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #e0dede;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: rgb(107, 106, 106);
+}
+
+.search_input:focus + .search_button {
+  background-color: #e0dede;
+}
+
+.search__button {
+  border: none;
+  background-color:  #e0dede;
+  margin-top: .1em;
+  height: 60%;
+  padding: 4px 0px;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #0a0a0a;
+}
+
+.icon{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+  width: 21%;
+  padding: 10px;
+  gap: 20px;
+} 
+.icon div:hover{
+  cursor: pointer;
+}
+/* **************************************** Footer ************************************************** */
+footer{
+  background-color: #f5f5f5;
+  padding-top: 40px;
+  width: 100%;
+}
+
+footer>div:nth-child(1){
+  display: flex;
+  width: 87%;
+  height: 300px;
+  /* border: 1px solid black; */
+  margin: auto;
+  font-weight: 300;
+}
+footer>div:nth-child(1) div{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 25%;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 2px;
+  gap: 10px 0px;
+  
+}
+footer a{
+  color: #737272;
+  text-decoration: none;
+}
+footer>div img{
+  height: 10vh;
+  width: 130px;
+}
+footer>div:nth-child(2){
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  font-weight: 300;
+}
+footer>div:nth-child(2) div{
+  width: 30%;
+  margin: auto;
+}
+footer>div:nth-child(3){
+  display: flex;
+  width: 87%;
+  margin: auto;
+  margin-top: 40px;
+  font-weight: 300;
+  padding: 40px 0px;
+  border-top: 1px solid rgb(193, 192, 192);
+  border-bottom: 1px solid rgb(193, 192, 192);
+}
+footer>div:nth-child(3)>div{
+  width: 70%;
+  margin: auto;
+  height: 23vh;
+}
+footer>div:nth-child(3) img{
+ height: 80%;
+width: 80%;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  margin-top:8px;
+
+}
+.footer-icons a{
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facebook-icon{
+  background-color: rgb(27, 120, 241);
+} 
+.youtube-icon{
+  background-color: rgb(241, 27, 27);
+}
+ .twitter-icon{
+  background-color: rgb(87, 146, 224);
+ } 
+ .instagram-icon{
+  background-color: rgb(241, 27, 173);
+ }
+ .linkedin-icon{
+  background-color: rgb(6, 73, 161);
+ }
+ .pinterest-icon{
+  background-color: rgb(241, 27, 27);
+ }
+ .footer-icons a:hover{
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+}
+.fab {
+  font-size: 20px;
+}
+footer>div:nth-child(4){
+  display: flex;
+  width: 87%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 40px ;
+  font-weight: 300;
+  justify-content: space-between;
+}
+footer>div:nth-child(4) div{
+ display: flex;
+ gap: 10px;
+ color: #737272;
+}
+
+.dropdown {
+  width: 99%;
+  margin: auto;
+  position: relative;
+  z-index: 999;
+  border-bottom: 1px solid #eae7e7;
+  border-top: 1px solid #eae7e7;
+}
+
+.dropdown ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+
+.dropdown ul li {
+  position: relative;
+}
+
+.dropdown ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dropdown ul li>a:hover {
+  background-color: #f2f2f2;
+  border-bottom: 2.5px solid #ff8a00;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: max-content;
+  z-index: 1;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+.col h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.dropdown-content>div>div a {
+  display: block;
+  padding: 0px 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(138, 133, 133);
+  text-decoration: none;
+}
+
+.col>div {
+  margin-top: 25px;
+}
+
+.col>div:first-child {
+  margin-top: 0px;
+}
+
+.col a:hover {
+  color: #ff8a00;
+}
+        /* ***************middle page****************/
+        
+          .cap1,.cap2,.cap3,.cap4,.cap5,.cap6{
+           display: flex;
+           gap: 2%;
+           }
+           img{
+            width: 100%;
+           }
+          
+           .cap7 > div{
+            width: 100%;
+           }
+           .cap7,.cap8{
+             display: flex;
+             gap: 4%;
+           }
+           #Dogimg{
+            width: 90%;
+           }
+           .cap9{
+            display: flex;
+            }
+           .cap9 > div{
+            width: 100%;
+           }
+           .cap10{
+            display: flex;
+            width: 100%;
+           }
+           .cap10 > div{
+            width: 30%;
+            padding-left: 1%;
+           } 
+            #leven{
+            width: 4%;
+            height: 4%;
+            display: flex;
+            gap: 40%;
+             padding-left: 5%;
+             padding-top: 0.5%; 
+           } 
+           .cap11{
+            display: flex;
+            width: 100%;
+            gap: 30%;
+           }
+           #side{
+                width: 15%;
+                margin-bottom: 10%;
+            }
+            #visa{
+                width: 40%;
+                display: flex;
+            } 
+            #LastImages{
+                width: 40%;
+            }
+    
+  </style>  
+</head>
+<body>
+     <!-- ***********************************Header********************************************************** -->
+     <header>
+        <!-- ***********************************header-div********************************************************** -->
+            <div id="header-div">
+                <div>
+                    <a href="#">Sell on Pepperfry</a>
+                    <a href="#">Become a Franchisee</a>
+                    <a href="#">Buy in Bulk</a>
+                    <a href="#">Find a Studio</a>
+                    <a href="#">Find Design Inspiration</a>
+                </div>
+                <div>
+                    <a href="#">Enter pincode</a>
+                    <a href="#">Find Pepperfry studio</a>
+                </div>
+            </div>
+        <!-- ***********************************Nav********************************************************** -->
+            <nav>
+                <div>
+                     <img src="pepperflylogo.jpg" alt=""> 
+                </div>
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="Your door to happiness opens with a search">
+                    <button class="search__button">
+                        <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="icon">
+                    <div class="icon_box">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="icon_box">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="icon_box">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="icon_box">
+                        <i class="fas fa-truck-moving"></i>
+                    </div>
+                </div>
+            </nav>
+        <!-- ***********************************Dropdown Menu********************************************************** -->
+        <div class="dropdown">
+          <ul>
+              <li>
+                  <a href="./FurniShings.html">Furniture</a>
+                  <div class="dropdown-content">
+                      <div class="row">
+                          <div class="col">
+                              <div>
+                                  <h6>Sofas</h6>
+                                  <a href="#">3 Seater Sofas</a>
+                                  <a href="#">2 Seater Sofas</a>
+                                  <a href="#">1 Seater Sofas</a>
+                                  <a href="#">Sofa Sets</a>
+                                  <a href="#">LHS Sectionals</a>
+                                  <a href="#">RHS Sectionals</a>
+                                  <a href="#">Corner Sofas</a>
+                                  <a href="#">Chaise Loungers</a>
+                                  <a href="#">Sofa Cum Beds</a>
+                                  <a href="#">Futons</a>
+                              </div>
+                              <div>
+                                  <h6>Recliners</h6>
+                                  <a href="#">1 Seater</a>
+                                  <a href="#">2 Seater</a>
+                                  <a href="#">3 Seater</a>
+                                  <a href="#">Recliner Sets</a>
+                              </div>
+
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Sofa Chairs</h6>
+                                  <a href="#">Wing Chairs</a>
+                                  <a href="#">Lounge Chairs</a>
+                                  <a href="#">Slipper Chairs</a>
+                                  <a href="#">Barrel Chairs</a>
+                              </div>
+                              <div>
+                                  <h6>Office Chairs</h6>
+                                  <a href="#">Ergonomic Chairs</a>
+                                  <a href="#">Executive Chairs</a>
+                                  <a href="#">FutTraining Chairsons</a>
+                                  <a href="#">Guest Chairs</a>
+                                  <a href="#">Cantilever Chairs</a>
+                              </div>
+                              <div>
+                                  <h6>Gaming Chairs</h6>
+                              </div>
+                              <div>
+                                  <h6> Bean Bags</h6>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Chairs</h6>
+                                  <a href="#">Arm Chairs</a>
+                                  <a href="#">Rocking Chairs</a>
+                                  <a href="#">Folding Chairs</a>
+                                  <a href="#">Iconic Chairs</a>
+                                  <a href="#">Cafe Chairs</a>
+                              </div>
+                              <div>
+                                  <h6>Seating</h6>
+                                  <a href="#">Seating</a>
+                                  <a href="#">Benches</a>
+                                  <a href="#">Ottomans</a>
+                                  <a href="#">Pouffes</a>
+                                  <a href="#">Recamiers</a>
+                                  <a href="#">Foot Stools</a>
+                                  <a href="#">Seating Stools</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Centre Tables</h6>
+                                  <a href="#">Coffee Tables</a>
+                                  <a href="#">Coffee Table Sets</a>
+                                  <a href="#">End Tables</a>
+                                  <a href="#">Nest of Tables</a>
+                                  <a href="#">C Shaped Tables</a>
+                              </div>
+                              <div>
+                                  <h6>TV & Media Units</h6>
+                                  <a href="#">TV Consoles</a>
+                                  <a href="#">TV Shelves</a>
+                                  <a href="#">TV Units</a>
+                              </div>
+                              <div>
+                                  <h6>Shoe Racks</h6>
+                                  <a href="#">Shoe Cabinets</a>
+                                  <a href="#">Open Shoe Racks</a>
+                                  <a href="#">Shoe Rack & Seat</a>
+                                  <a href="#">Tilt Out Racks</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Dining Sets</h6>
+                                  <a href="#">4 Seater Sets</a>
+                                  <a href="#">6 Seater Sets</a>
+                                  <a href="#">8 Seater Sets</a>
+                                  <a href="#">2 Seater Sets</a>
+                              </div>
+                              <div>
+                                  <h6>Dining Chairs</h6>
+                              </div>
+                              <div>
+                                  <h6>Dining Tables</h6>
+                              </div>
+                              <div>
+                                  <h6>Console Tables</h6>
+                              </div>
+                              <div>
+                                  <h6>Bar Furniture</h6>
+                                  <a href="#">Bar Cabinets</a>
+                                  <a href="#">Bar Trolleys</a>
+                                  <a href="#">Bar Stools</a>
+                                  <a href="#">Bar Table Sets</a>
+                                  <a href="#">Wine Racks</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Beds</h6>
+                                  <a href="#">Queen Size Beds</a>
+                                  <a href="#">King Size Beds</a>
+                                  <a href="#">Single Beds</a>
+                                  <a href="#">Poster Bed</a>
+                                  <a href="#">Folding Bed</a>
+                              </div>
+                              <h6>Bedside Tables</h6>
+                              <a href="#">Night Stands</a>
+                              <a href="#">Bedside Chests</a>
+                              <a href="#">Dressing Tables</a>
+                              <div>
+                                  <h6>Dressers</h6>
+                                  <a href="#">Dressing Cabinets</a>
+                                  <a href="#">Dressing Consoles</a>
+                                  <a href="#">Dressing Units</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Wardrobes</h6>
+                                  <a href="#">1 Door</a>
+                                  <a href="#">2 Door</a>
+                                  <a href="#">3 Door</a>
+                                  <a href="#">4 Door</a>
+                                  <a href="#">4+ Door</a>
+                                  <a href="#">Sliding Door</a>
+                                  <a href="#">Corner Sofas</a>
+                                  <a href="#">Chaise Loungers</a>
+                                  <a href="#">Sofa Cum Beds</a>
+                                  <a href="#">Futons</a>
+                              </div>
+                              <div>
+                                  <h6>Cabinetry</h6>
+                                  <a href="#">Sideboards</a>
+                                  <a href="#">Chest of Drawers</a>
+                                  <a href="#">Plastic Cabinets</a>
+                                  <a href="#">Book Shelves</a>
+                                  <a href="#">Book Cases</a>
+                                  <a href="#">Kitchen Cabinets</a>
+                                  <a href="#">Office Cabinets</a>
+                                  <a href="#">Trunks</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Study Tables</h6>
+                                  <a href="#">Writing Tables</a>
+                                  <a href="#">Computer Tables</a>
+                                  <a href="#">Hutch Desks</a>
+                                  <a href="#">Foldable Tables</a>
+                                  <a href="#">Wall Mounted</a>
+                                  <a href="#">Portable Tables</a>
+                                  <a href="#">Office Tables</a>
+                              </div>
+                              <div>
+                                  <h6>Outdoor</h6>
+                                  <a href="#">Swings</a>
+                                  <a href="#">Hammocks</a>
+                                  <a href="#">Tables</a>
+                                  <a href="#">Table & Chair Sets</a>
+                                  <a href="#">Seating</a>
+                                  <a href="#">Plastic Chairs</a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div>
+                                  <h6>Kids & Teens</h6>
+                                  <a href="#">Cribs</a>
+                                  <a href="#">Beds</a>
+                                  <a href="#">Bunk Beds</a>
+                                  <a href="#">Studyy</a>
+                                  <a href="#">Wardrobes</a>
+                                  <a href="#">Book Shelves</a>
+                                  <a href="#">Storage</a>
+                                  <a href="#">Seating</a>
+                                  <a href="#">Bean Bags</a>
+                              </div>
+                              <div>
+                                  <h6>Furniture Care</h6>
+                                  <a href="#">Furniture Care Kit</a>
+                                  <a href="#">Sofa Spa</a>
+                                  <a href="#">Chair Spa</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li><a href="#">Home Décor</a></li>
+              <li><a href="#">Lamps & Lighting</a></li>
+              <li><a href="#">Kitchen & Dining</a></li>
+              <li><a href="#">Furnishings</a></li>
+              <li><a href="#">Mattresses</a></li>
+              <li><a href="#">Appliances</a></li>
+              <li><a href="#">Pets</a></li>
+              <li><a href="#">Modular</a></li>
+              <li><a href="#">Gift Cards</a></li>
+          </ul>
+      </div>
+        <!-- ********************Static Home Page******************************** -->
+        <div class="cap1">
+            <div id="side">
+                <h1>Pets</h1><br>
+                <p>Cat Furniture</p>
+                <p>Dog Furniture</p>
+                <p>Bird Houses and Feeders</p>
+                <p>Crates and Carriers</p>
+                <p>Pet Furnishings</p>
+                <p>Pet Toys</p>
+                <p>Pet Grooming</p>
+                <p>Litter and Supplies</p>   
+            </div><hr>
+            <div id="Dogimg">
+                 <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Web_Pets_2386X686_2x_22September22.jpg" alt="">
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Life Is Better With A Dog</h1><br>
+        <div class="cap2">
+            <div id="A">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/pets_section3_web_21092022_1.jpg" alt="">
+                <h3>Snooze & Snuggle</h3>
+                <p>100+ Dog Beds</p>
+            </div>
+            <div id="A">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/pets_section3_web_21092022_2.jpg" alt="">
+                <h3>Dogs Love To Play</h3>
+                <p>50+ Plush Toys</p>
+            </div>
+            <div id="A">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/pets_section3_web_21092022_3.jpg" alt="">
+                <h3>Hanging Out With Hooman</h3>
+                <p>10+ Carrier</p>
+            </div>
+            <div id="A">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/pets_section3_web_21092022_4.jpg" alt="">
+                <h3>Rest & Recreation</h3>
+                <p>30+ mats</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">No Companion Like A Cat</h1><br>
+        <div class="cap3">
+            <div id="B">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/pets_section4_web_21092022_1.jpg" alt="">
+                <h3>Fluffy Fur Ball</h3>
+                <p>10+ Cat Grooming</p>
+            </div>
+            <div id="B">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/pets_section4_web_21092022_2.jpg" alt="">
+                <h3>Sleep Sweet Kitty</h3>
+                <p>5+ Cat Beds</p>
+            </div>
+            <div id="B">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/pets_section4_web_21092022_3.jpg" alt="">
+                <h3>Climb,Scratch,Play</h3>
+                <p>20+ cat Trees & Candos</p>
+            </div>
+            <div id="B">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/pets_section4_web_21092022_4.jpg" alt="">
+                <h3>A Dose Of Simulation </h3>
+                <p>50+ Interactive Toys</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">For Your Furry Buddy</h1><br>
+        <div class="cap4">
+            <div id="C">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/pets_section5_web_21092022_1.jpg" alt="">
+                <h3>Play Catch</h3>
+                <p>20+ Rope Toys</p>
+            </div>
+            <div id="C">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/pets_section5_web_21092022_2.jpg" alt="">
+                <h3>Let's Go Out</h3>
+                <p>10+ Crates & Carrier</p>
+            </div>
+            <div id="C">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/pets_section5_web_21092022_3.jpg" alt="">
+                <h3>For Healthy Teeth</h3>
+                <p>10+ Chew Toys</p>
+            </div>
+        </div><br>
+        <div class="cap5">
+            <div id="D">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/pets_section5_web_21092022_4.jpg" alt="">
+                <h3>Safe For Your Pet </h3>
+                <p>10+ Rubber Toys</p>
+            </div>
+            <div id="D">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/pets_section5_web_21092022_5.jpg" alt="">
+                <h3>Come Little Birdy</h3>
+                <p>10+ Bird Houses & Feeders</p>
+            </div>
+            <div id="D">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/pets_section5_web_21092022_6.jpg" alt="">
+                <h3>Bath Time</h3>
+                <p>10+ Dog Shampoo</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Top Brands To Choose From</h1><br>
+        <div class="cap6">
+            <div id="E">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/pets_section6_web_21092022_1.jpg" alt="">
+                <h3>50+ Options</h3>
+                <p>Popular For Pet Toys</p>
+            </div>
+            <div id="E">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/pets_section6_web_21092022_2.jpg" alt="">
+                <h3>10+ Options</h3>
+                <p>Popular For Dog Beds</p>
+            </div>
+            <div id="E">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/pets_section6_web_21092022_3.jpg" alt="">
+                <h3>30+ Options</h3>
+                <p>Popular For Mats</p>
+            </div>
+            <div id="E">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/pets_section6_web_21092022_4.jpg" alt="">
+                <h3>10+ Options</h3>
+                <p>Popular For Dog Beds</p>
+            </div>
+            <div id="E">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/pets_section6_web_21092022_5.jpg" alt="">
+                <h3>50+ Options</h3>
+                <p>Popular For Cat Beds</p>
+            </div>
+            <div id="E">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/pets_section6_web_21092022_6.jpg" alt="">
+                <h3>50+ Options</h3>
+                <p>Popular For Grooming</p>
+            </div>
+        </div><br>
+        <h2>Buy Pet Furniture Online at Best Price in India</h2>
+        <br>
+        <p>Nothing beats a peaceful nap after a hard day, or simply unwinding on the couch. Why should our cherished friends be excluded from these beautiful comforts? Pepperfry has set out to offer furniture for your pets with the purpose of providing dogs and cats with a modern and contemporary lifestyle.</p>
+        <br><p>When it comes to owning your own pet, you want to make sure you have all of the necessary equipment to care for them. Whether you have a cat, dog, bird, or any other kind of small animal, having the right furniture to care for them goes a long way toward keeping them happy. And each pet needs a unique style of furnishings. Cats, for example, prefer litter boxes and cat trees, but dogs prefer dog beds and homes. It all depends on the animal and how you want to care for it. Here are some examples of pet furniture that will make your pet feel perfectly at home.</p>
+        <br><h2>Dog Furniture</h2>
+        <br><p>There are several sorts of pet furniture available at Pepperfry. Dog beds, crates, and houses are the most common types of dog furniture for your home. These are all excellent options if you need a place for your dog to sleep at night or if you want to provide them with their own private space where they can feel safe at home. If you want your dog to spend more time outside, an outdoor dog home or kennel are great options. To keep your dog as happy as possible, consider alternative sorts of dog furniture such as dog kennels, carriers, and gates.</p>
+        <br><h2>Cat Furniture</h2>
+        <br><p>Like dogs, you'll want to make sure your feline friend has all of the expected pet furniture, such as a cat bed, carrier, and litter box. Despite the fact that some of the furniture is comparable to dog furniture, cats have their own sorts of furniture that are unique to them. Cats, for example, enjoy cat perches and scratchers, which allow them to groom their claws and be happy and healthy.</p>
+        <br><h2>Other Pet Furniture</h2>
+        <br><p>Although cats and dogs are the most common sorts of pets, there are several more types of pets that require pet furniture. A birdcage, for example, is required if you want your pet bird to remain in one place throughout the day. If you have any aquatic companions, fish tanks and aquariums are great for both decorating your space and entertaining your fish.</p>
+        <br><p>Incorporating pet furniture into your home doesnt have to ruin your existing aesthetic, it can serve as the perfect enhancement you and your pets will love!</p>
+        <br><p>Need more things for your home (and your pet too!)? Shop our range of cats and dogs' items for your home.</p>
+        <br><p>Pepperfry offers dog furniture, cat furniture, bird houses and feeders, crates and carriers, pet furnishings, pet toys, pet grooming, litter and supplies, and many more products. Shop Now!</p>
+        <br>
+     </header>    
+        <!-- ***********************************footer************************************* -->
+        <footer>
+            <!-- ***********************************div1********************************************************** -->
+            <div>
+                <div>
+                    <h3>Useful Links</h3>
+                    <a href="">About Us</a>
+                    <a href="">Our Blog</a>
+                    <a href="">Careers</a>
+                    <a href="">Corporate Governance</a>
+                    <a href="">Pepperfry In the News</a>
+                    <a href="">Find A Studio</a>
+                    <a href="">Gift Cards</a>
+                    <a href="">Brands</a>
+                    <a href="">Customer Reviews</a>
+                </div>
+                <div>
+                    <h3>Partners</h3>
+                    <a href="">Sell With Us</a>
+                    <a href="">Become a Franchisee</a>
+                    <a href="">Become a Pep Homie</a>
+                    <a href="">Design For Us</a>
+                    <a href="">Pepperfry Marketplace Policies</a>
+                    <a href="">Login to Your Merchant Dashboard</a>
+                    <a href="">Important : GST and You</a>
+                    <a href="">Corporate Enquiries</a>
+                </div>
+                <div>
+                    <h3>Need Help?</h3>
+                    <a href="">Contact Us</a>
+                    <a href="">Returns & Refund</a>
+                    <a href="">Track Your Order</a>
+                    <a href="">FAQs</a>
+                    <a href="">Buy on Phone</a>
+                </div>
+                <div>
+                    <h3>Download App</h3>
+                    <a href="https://apps.apple.com/in/app/pepperfry/id972047429"><img
+                            src="https://e7.pngegg.com/pngimages/718/1015/png-clipart-app-store-apple-google-play-apple-text-logo.png"
+                            alt="Download App"></a>
+                     <img style="padding-right: 0%;" src="https://tse2.mm.bing.net/th?id=OIP.GZhmkG200Ppz-ezObC3JfQHaCi&pid=Api&P=0" alt="">
+                </div>
+            </div>
+            <!-- ***********************************div2********************************************************** -->
+            <div>
+                <div>
+                    <h3>Popular Categories</h3>
+                    <a href="#">Queen Size Beds, King Size Beds, Coffee Tables, Dining Sets, Recliners, Sofa cum Beds,
+                        Rocking Chairs, Cabinets, Book Shelves, TV Unit, Wardrobes, Outdoor Furniture, Bar Cabinets, Wall
+                        Shelves, Photo Frames, Bed Sheets, Mattresses, Table Cloth, Living Room Furniture, Study Tables,
+                        Dining Room Furniture, Office Furniture, Bed Room Furniture, Dining Table, Beds, Sofas, Sofa Set,
+                        Trundle Bed</a>
+                </div>
+                <div>
+                    <h3>Popular Brands</h3>
+                    <a href="#">Mintwud, Woodsworth, CasaCraft, Amberville, Mudramark, Bohemiana, Clouddio, Spacewood,
+                        Durian, Green Soul, Godrej Interio, Nilkamal, Orange Tree , HomeTown , Duroflex , Sleepyhead , Peps
+                        India , NestAsia , Jaipur Rugs , Obettee , Eliante by Jainsons , @Home , Bombay Dyeing , Kapoor E
+                        Illuminaton , Ellementry , Chumbak , Philips , Jaipur Fabric , Maspar , India Circus by Krsnaa
+                        Mehta</a>
+                </div>
+                <div>
+                    <h3>Cities we deliver to</h3>
+                    <a href="#">Bengaluru, Mumbai, Navi Mumbai, Delhi, Hyderabad, Pune, Chennai, Gurgaon, Kolkata, Noida,
+                        Goa, Ghaziabad, Ahmedabad, Coimbatore, Faridabad, Jaipur, Lucknow, Kochi, Visakhapatnam, Chandigarh,
+                        Vadodara, Nagpur, Thiruvananthapuram, Indore, Mysore, Bhopal, Surat, Jalandhar, Patna, Ludhiana,
+                        Nashik, Madurai, Kanpur, Aurangabad and many more</a>
+                </div>
+            </div>
+            <!-- ***********************************div3********************************************************** -->
+            <div>
+                <div id="visa">
+    
+                    <div>
+                        <h3>We Accept</h3><br>
+                        <img style="height: 50%;width: 35%;" src="https://tse3.mm.bing.net/th?id=OIP.ah9LG1cJajShwcxSZQ2WeAHaHa&pid=Api&P=0" alt=""><br><br>
+                    <img style="height: 40%;width: 35%;" src="https://tse2.mm.bing.net/th?id=OIP.9FNJf35UgibeDuU6t7zh_wHaCO&pid=Api&P=0" alt="jyfjcjyf"><br>
+                    
+                    </div>
+                    <div>
+                    <img style="padding-right: 200%;" src="projectVisa.jpg" alt="">
+                        
+                    </div>
+                </div>
+            
+                <div id="LastImages">
+                    <h3>Like what you see? You'll like us even more here</h3><br><br>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/Pepperfry" target="_blank" class="facebook-icon"><i
+                            class="fab fa-facebook-f"></i></a>
+    
+                        <a href="https://twitter.com/pepperfry" target="_blank" class="twitter-icon"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/Pepperfrytv" target="_blank" class="youtube-icon"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/pepperfry_official/" target="_blank" class="instagram-icon"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/pepperfry" target="_blank" class="linkedin-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://in.pinterest.com/pepperfry/" target="_blank" class="pinterest-icon"><i
+                                class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>   
+            
+    
+            <!-- ***********************************div4********************************************************** -->
+            
+            <div class="top14">
+                <div>
+                    <p style="word-spacing: 55px">BuyInBulk WriteATestimonial</p>
+                </div>
+                <div>
+                    <p style="word-spacing: 55px">WhitehatSiteMap TermsOfUse PrivacyPolicy YourData&Security GrievanceRedressal</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    
+</body>
+</html>
+<script>
+
+</script>
