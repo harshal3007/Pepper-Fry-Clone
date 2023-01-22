@@ -4,7 +4,8 @@ let sofaProdUrl=`https://63c54f2af3a73b3478530d0f.mockapi.io/EcommerceProducts/`
 let maindata=[];
 let container=document.getElementById("container");
 
-
+// local Storage stores values
+let cartdata=JSON.parse(localStorage.getItem("cart"))||[];
 
 //load page add Event Listener
 window.addEventListener("load",()=>{
@@ -31,6 +32,8 @@ fetch(url)
             shippingDay:element.shippingDay,
             discountPrice:+element["totalPrice"].replaceAll(",","")-(+element["totalPrice"].replaceAll(",",""))*(+element.discount)/100,
 
+            id:element.id,
+
            }
            return obj;
     })
@@ -56,11 +59,42 @@ data.forEach((element,index)=>{
     let pricediv=document.createElement("div");
         pricediv.setAttribute("id","price");
 
-    let image=document.createElement("img");
-        image.setAttribute("src",element.image);
-        image.setAttribute("class","image")
 
-    let name=document.createElement("p");
+
+
+        let imgBtndiv=document.createElement("div");
+        imgBtndiv.setAttribute("class","imgBtndiv")
+            let image=document.createElement("img");
+                image.setAttribute("src",element.image);
+                image.setAttribute("class","image");
+    
+            let BtnAdd=document.createElement("button");
+            BtnAdd.setAttribute("class","BtnAdd");
+            BtnAdd.innerText="Add to Cart";
+          
+            BtnAdd.addEventListener("click",function(){
+                 
+            let AlreadyP=false;
+            for(let i=0; i<cartdata.length; i++){
+                if(cartdata[i].id==element.id){
+                    AlreadyP=true;
+                }
+            }
+            if(AlreadyP==true){
+                 alert("Already Present in the Cart")
+            }else{
+                cartdata.push(element)
+                    localStorage.setItem("cart",JSON.stringify(cartdata));
+                    BtnAdd.innerText="Added to Cart";
+                    BtnAdd.style.backgroundColor="green"
+                
+            }
+               
+            })
+    
+            imgBtndiv.append(image,BtnAdd)
+
+    let name=document.createElement("h2");
         name.setAttribute("class","name");
         name.innerText=element.name;
 
@@ -69,25 +103,26 @@ data.forEach((element,index)=>{
         brandName.innerText=element.brandName;
 
     let totalPrice=document.createElement("p");
-        totalPrice.setAttribute("class","totalPrice");
         totalPrice.innerText=element["totalPrice"];
 
     let discount=document.createElement("p");
         discount.setAttribute("class","discount");
-        discount.innerText=element.discount;
+        discount.innerText=`${element.discount}% Off`;
 
     let discountPrice=document.createElement("p");
         discountPrice.setAttribute("class","discountPrice");
-        discountPrice.innerText=`${Math.floor((totalPrice.innerText)-(totalPrice.innerText*discount.innerText/100)).toLocaleString("en-US")}`
-        let symbolWithDisPrice=discountPrice.innerText;
-        symbolWithDisPrice=`₹`
+        discountPrice.innerText=`₹ ${Math.floor((totalPrice.innerText)-(totalPrice.innerText*element.discount/100)).toLocaleString("en-US")}`
+
+    let symbolWithTotalPrice=document.createElement("p");
+        symbolWithTotalPrice.setAttribute("class","symbolWithTotalPrice");
+        symbolWithTotalPrice.innerText=`₹ ${(totalPrice.innerText).toLocaleString("en-US")}`;
 
     let shippingDay=document.createElement("p");
         shippingDay.setAttribute("class","shippingDay");
-        shippingDay.innerText=`Ships in ${element.shippingDay} day`;
+        shippingDay.innerText=`Ships in ${element.shippingDay} day`;    
 
-    pricediv.append(discountPrice,totalPrice);
-    div.append(image,name,brandName,pricediv,discount,shippingDay);
+    pricediv.append(discountPrice,symbolWithTotalPrice);
+    div.append(imgBtndiv,name,brandName,pricediv,discount,shippingDay);
     container.append(div);
     
 })
@@ -99,7 +134,7 @@ data.forEach((element,index)=>{
         sort(maindata)
         function sort(data){
             let sortdata=data.sort((a,b)=>{
-                return a.discountPrice-b.discountPrice;
+                return b.discountPrice-a.discountPrice;
             });
             console.log(sortdata)
             productCard(sortdata)
@@ -112,7 +147,7 @@ data.forEach((element,index)=>{
         sort(maindata)
         function sort(data){
             let sortdata=data.sort((a,b)=>{
-                return b.discountPrice-a.discountPrice;
+                return a.discountPrice-b.discountPrice;
             });
             productCard(sortdata)
         }
@@ -130,42 +165,35 @@ data.forEach((element,index)=>{
         }
     }
 
+    // //filter functionality
+    var filterArray=[];
+    var checkboxes=document.querySelectorAll(".brandName");
 
-
-
-
-
-    //filter functionality
-    var array=[];
-
-
-    var brandNameCheckboxes=document.querySelectorAll(".brandName");
-    
-    
-    function filterdata(checkboxes){
-    
     for(var checkbox of checkboxes){
         checkbox.addEventListener("click",function(){
+          
             if(this.checked==true){
-                maindata.filter((element)=>{
+                maindata.forEach((element)=>{
                     if(element.brandName==this.value){
-                        array.push(element)
-                        return true;
+                        filterArray.push(element)
                     }
                 })
-                   console.log(array)
+
             }else{
-             array=array.filter((element)=>{
-                if(element.brandName!=this.value){
-                    return true;
-                }
-             })
-    console.log(array)
+                filterArray=filterArray.filter((elem)=>{
+                    if(elem.brandName!==this.value){
+                        return true;
+                    }
+                })   
             }
-    
+            if(filterArray.length==0){
+                productCard(maindata);
+            }else{
+                productCard(filterArray)
+            }
+
         })
+    
     }
-    }
-    filterdata(brandNameCheckboxes)
     
     
