@@ -1,0 +1,39 @@
+*padding{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    color:#121212;
+}
+#container{
+    width:73%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    font-weight: 500;
+}
+#container .image{
+    width:100%;
+    margin:0 0 8px;
+
+}
+#price{
+    display:flex;
+    height:40px;
+    align-items: center;
+    
+}
+#price .totalPrice{
+    text-decoration: line-through;
+    color:#848484;
+    font-size:12px;
+}
+#price .discountPrice{
+    font-size: 16px;
+    color:#FF7035;
+    margin-right:8px;
+    font-weight: bolder;
+}
+
