@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Furniture</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/mn.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/<your-kit-code>.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" /> 
+        crossorigin="anonymous" />
 <style>
           
           * {
@@ -19,11 +20,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      /* width: 96%;  */
 }
-header{
-    width: 95%;
-    padding-left: 3%;
-    
-}
+
 
 /* **************************************** Header-div ************************************************** */
 #header-div {
@@ -442,6 +439,10 @@ footer>div:nth-child(4) div{
             #LastImages{
                 width: 40%;
             }
+            .mainBody{
+                width:95%;
+                margin:auto;
+            }
 
 </style>
 
@@ -449,63 +450,62 @@ footer>div:nth-child(4) div{
 <body>
         <!-- ***********************************Header********************************************************** -->
         <header>
-            <!-- ***********************************header-div********************************************************** -->
-                <div id="header-div">
-                    <div>
-                        <a href="#">Sell on Pepperfry</a>
-                        <a href="#">Become a Franchisee</a>
-                        <a href="#">Buy in Bulk</a>
-                        <a href="#">Find a Studio</a>
-                        <a href="#">Find Design Inspiration</a>
+            <!-- ************************************header-div*********************************************************** -->
+            <div id="header-div">
+                <div>
+                    <a href="#">Sell on Pepperfry</a>
+                    <a href="#">Become a Franchisee</a>
+                    <a href="#">Buy in Bulk</a>
+                    <a href="#">Find a Studio</a>
+                    <a href="#">Find Design Inspiration</a>
+                </div>
+                <div>
+                    <a href="#">Enter pincode</a>
+                    <a href="#">Find Pepperfry studio</a>
+                </div>
+            </div>
+            <!-- ************************************Nav*********************************************************** -->
+            <nav>
+                <div>
+                    <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                </div>
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="Your door to happiness opens with a search">
+                    <button class="search__button">
+                        <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="icon">
+                    <div class="icon_box">
+                        <a style="color: black;" href="./login.html" target="_blank"><i class="far fa-user"></i></a>
                     </div>
-                    <div>
-                        <a href="#">Enter pincode</a>
-                        <a href="#">Find Pepperfry studio</a>
+                    <div class="icon_box">
+                       <a style="color: black;" href="#"><i class="far fa-heart"></i></a> 
+                    </div>
+                    <div class="icon_box">
+                        <a style="color: black;" href="./cart.html" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="icon_box">
+                       <a  style="color: black;" href="#"> <i class="fas fa-truck-moving"></i></a>
                     </div>
                 </div>
-            <!-- ***********************************Nav********************************************************** -->
-                <nav>
-                    <div>
-                         <img src="pepperflylogo.jpg" alt="logo"> 
-                        <!-- <h1 style="color:rgb(253, 94, 3);;font-size: 40px;font-style:italic;">Pepperfry</h1> -->
-                    </div>
-                    <div class="search">
-                        <input type="text" class="search__input" placeholder="Your door to happiness opens with a search">
-                        <button class="search__button">
-                            <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
-                                <g>
-                                    <path
-                                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="icon">
-                        <div class="icon_box">
-                            <i class="far fa-user"></i>
-                        </div>
-                        <div class="icon_box">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="icon_box">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="icon_box">
-                            <i class="fas fa-truck-moving"></i>
-                        </div>
-                    </div>
-                </nav>
-            <!-- ***********************************Dropdown Menu********************************************************** -->
+            </nav>
+            <!-- ************************************Dropdown Menu*********************************************************** -->
             <div class="dropdown">
                 <ul>
                     <li>
-                        <a href="./FurniShings.html">Furniture</a>
+                        <a href="./Furniture.html">Furniture</a>
                         <div class="dropdown-content">
                             <div class="row">
                                 <div class="col">
                                     <div>
-                                        <h6>Sofas</h6>
+                                       <h6>Sofas</h6>
                                         <a href="#">3 Seater Sofas</a>
                                         <a href="#">2 Seater Sofas</a>
                                         <a href="#">1 Seater Sofas</a>
@@ -524,7 +524,7 @@ footer>div:nth-child(4) div{
                                         <a href="#">3 Seater</a>
                                         <a href="#">Recliner Sets</a>
                                     </div>
-      
+    
                                 </div>
                                 <div class="col">
                                     <div>
@@ -708,283 +708,285 @@ footer>div:nth-child(4) div{
                             </div>
                         </div>
                     </li>
-                    <li><a href="#">Home Décor</a></li>
-                    <li><a href="#">Lamps & Lighting</a></li>
-                    <li><a href="#">Kitchen & Dining</a></li>
-                    <li><a href="#">Furnishings</a></li>
+                    <li><a href="./Home Decor.html">Home Décor</a></li>
+                    <li><a href="./Lamps and Lighting.html">Lamps & Lighting</a></li>
+                    <li><a href="./KichenAndDining.html">Kitchen & Dining</a></li>
+                    <li><a href="./FurniShings.html">Furnishings</a></li>
                     <li><a href="#">Mattresses</a></li>
-                    <li><a href="#">Appliances</a></li>
-                    <li><a href="#">Pets</a></li>
+                    <li><a href="./Appliences.html">Appliances</a></li>
+                    <li><a href="./Pets.html">Pets</a></li>
                     <li><a href="#">Modular</a></li>
                     <li><a href="#">Gift Cards</a></li>
                 </ul>
             </div>
-    <div class="top1">
-        <div id="side">
-            <h1>Furniture</h1><br>
-            <p>Sofas</p>
-            <p>Recliners</p>
-            <p>Sofa Chairs</p>
-            <p>Office Chairs</p>
-            <p>Gaming Chairs</p>
-            <p>Bean Bags</p>
-            <p>Chairs</p>
-            <p>Seating</p>
-            <p>Centre Tables</p>
-            <p>Entertainment Units</p>
-            <p>Shoe Racks</p>
-             <p>Dining Sets</p>
-            <p>Shoe Racks</p>
-            <p>Dining Sets</p>
-             <p>Dining Chairs</p>
-             <p>Dining Tables</p>
-            <p>Console Tables</p>
-             <p>Beds</p>  
-            <!-- <p>Bar Furniture</p>
-            <p>Dressing Tables</p>
-            <p>Wardrobes</p>
-            <p>Cabinetry</p>   -->
-        </div>
-        <div>
-            <img style="width: 100%;height: 300px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/Web_Furniture_Banner_2x_06Dec.jpg" alt="">
-        </div>
-    </div><br>
-    <h1 style="font-size: 30px;">Meet The Bestsellers</h1><br>
-    <div class="top2">
-        <div id="A">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_1.jpg" alt="">
-            <h3>2 Door Wardrobes</h3>
-            <p>50+ Options</p>
-        </div>
-        <div id="A">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_2.jpg" alt="">
-            <h3>Modern Writing Tables</h3>
-            <p>150+ Options</p>
-        </div>
-        <div id="A">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_3.jpg" alt="">
-            <h3>Queen Size Storage Beds</h3>
-            <p>150+ Options</p>
-        </div>
-        <div id="A">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_section3_web_05122022_4.jpg" alt="">
-            <h3>Gaming Chairs</h3>
-            <p>50+ Options</p>
-        </div>
-        <div id="A">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_5.jpg" alt="">
-            <h3>Shoe Cabinets</h3>
-            <p>50+ Options</p>
-        </div>
-        <div id="A">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_6.jpg" alt="">
-            <h3>Rectangular Coffee Tables</h3>
-            <p>150+ Options</p>
-        </div>
-    </div><br>
-    <h1 style="font-size:30px">It's A Big Deal</h1><br>
-    <div class="top3">
-        <div id="B">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_deal_web_20122022_1.jpg" alt="">
-            <h3>Family mealtime</h3>
-            <p>50+ Modern dining sets</p>
-        </div>
-        <div id="B">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furniture_section4_web_05122022_2.jpg" alt="">
-            <h3>Comfy Bean Bags</h3>
-            <p>50+ Bean Bags</p>
-        </div>
-        <div id="B">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_deal_web_20122022_3.jpg" alt="">
-            <h3>Budgets Buys For Nerds</h3>
-            <p>40+ Modern Books Shelves</p>
-        </div>
-        <div id="B">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_section4_web_05122022_4.jpg" alt="">
-            <h3>Chic Dressers</h3>
-            <p>50+ Dressers</p>
-        </div>
-    </div><br>
-    <h1 style="font-size: 30px;">What's #Trending?</h1><br>
-    <div class="top4">
-        <div id="C">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section5_large_1.jpg" alt="">
-            <h3>Me-Time Nook </h3>
-            <p>40+ Printed Wing Chairs</p>
-        </div>
-        <div id="C">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_section5_web_05122022_2.jpg" alt="">
-            <h3>Sofa Cum Bed</h3>
-            <p>15+ Innovative Designs</p>
-        </div>
-        <div id="C">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section5_large_3.jpg" alt="">
-            <h3>Majestic Marble</h3>
-            <p>20+ Top End Marble Tables</p>
-        </div>
-        <div id="C">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section5_large_4.jpg" alt="">
-            <h3>The Binge Corners</h3>
-            <p>120+ TV Units</p>
-        </div>
-    </div><br>
-    <h1 style="font-size: 30px;">Discover New Launches</h1><br>
-    <div class="top5">
-        <div id="D">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_section6_web_05122022_1.jpg" alt="">
-            <h3>Classic:Sheraton Range</h3>
-            <p>Important Latin teak Furniture</p>
-        </div>
-        <div id="D">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_section6_web_05122022_2.jpg" alt="">
-            <h3>Smartsters</h3>
-            <p>Spaces for Children To Blossom</p>
-        </div>
-        <div id="D">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furniture_section6_web_05122022_3.jpg" alt="">
-            <h3>Neudot</h3>
-            <p>Smart Home Furniture Solutions</p>
-        </div>
-        <div id="D">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_section6_web_05122022_4.jpg" alt="">
-            <h3>Woodbuzz</h3>
-            <p>For Modern & Colourful Homes</p>
-        </div>
-    </div><br>
-    <h1 style="font-size: 30px;">Your Style Chooses You</h1><br>
-    <div class="top6">
-        <div id="E">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section7_large_1.jpg" alt="">
-        </div>
-        <div id="E">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section7_large_2.jpg" alt="">
-        </div>
-        <div id="E">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section7_large_3.jpg" alt="">
-        </div>
-    </div><br>
-    <h1 style="font-size: 30px;">Top Brands To Choose From</h1><br>
-    <div class="top7">
-        <div id="F">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section_large_1.jpg" alt="">
-            <h3>2150+ Options</h3>
-            <p>Popular For Dining</p>
-        </div>
-        <div id="F">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section_large_2.jpg" alt="">
-            <h3>900+ Options</h3>
-            <p>Popular For Sofas</p>
-        </div>
-        <div id="F">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section_large_3.jpg" alt="">
-            <h3>600+ Options</h3>
-            <p>Popular For Wardrobes</p>
-        </div>
-        <div id="F">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_section7_web_05122022_1.jpg" alt="">
-            <h3>200+ Options</h3>
-            <p>Popular For Entertainment Units</p>
-        </div>
-        <div id="F">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furniture_section7_web_05122022_2.jpg" alt="">
-            <h3>150+ Options</h3>
-            <p>Popular For Sideboards</p>
-        </div>
-        <div id="F">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_section7_web_05122022_3.jpg" alt="">
-            <h3>150+ Options</h3>
-            <p>Popular For Recliners</p>
-        </div>
-    </div><br>
-    <h1 style="font-size: 30px;">Customers Speak</h1><br>
-    <div class="top8">
-        <div id="seven">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_7.jpg" alt="">
-            <h3>Bought these two grey puffy stools from pepperfry. Found them to be surprisingly strong! Blends perfectly with our theme, too!</h3>
-            <h4>Suman Senapatia</h4>
-            <p>Visakhapatnam</p>
-        </div>
-        <div id="seven">
-            <img style="height: 200px;width: 500px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/happy_customer_block_2_2906_0222.png" alt="">
-            <h3>I purchased Candy Study Chair in Pink Colour by Alex Daisy from pepperfry looks awesome and My daughter loves and spend most of the time during her home school sessions. I am happy with my choice to give a Gift to my daughter.</h3>
-            <h4>Satya Madhana</h4>
-            <p>Secunderabad</p>
-        </div>
-        <div id="seven">
-            <img  src="https://ii3.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_9.jpg" alt="">
-            <h3>Purchased an ergonomic chair, I thought it would not be fitting for me but once it got delivered, got it assembled then and there. Now, I am just loving it. Will suggest pepperfry.</h3>
-            <h4>Baba Kattubadi</h4>
-            <p>Hyderabad</p>
-        </div>
-    </div><br>
-    <h1 style="font-size: 30px;">Need Help Buying?</h1><br>
-    <div class="top9">
-        <div id="eight">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_1.jpg" alt="">
-            <p>Here's How To Choose The Right Sofa</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_2.jpg" alt="">
-            <p>How To Buy A Perfect Bed For Your Room</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_3.jpg" alt="">
-            <p>Your Guide To Buy The Perfect Mattress</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_4.jpg" alt="">
-            <p>Everything About Cabinets And Sideboards</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_5.jpg" alt="">
-            <p>What To Look For While Buying A Chair</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_6.jpg" alt="">
-            <p>Talk To Our Expert</p>
-        </div>
-    </div><br><br>
-    <h2>Buy Wooden Furniture Online</h2><br>
-    <br><p>Buy furniture online @ Pepperfry - India's largest home shopping destination offering a wide range of home and office furniture online. Choosing the right furniture for your home online will add elegance and functionality to your interior decor, while it will also be cost effective and long lasting at the same time. Enjoy fast shipping as well as cash on delivery at our online store.</p>
-    <br><h2>Things to Consider Before Buying Furniture</h2>
-    <br><p>There are so many furniture designs available nowadays. Looking at these, you may end up in a confusion of which one to buy. However, you must understand your requirements before purchasing the furniture. Here is a list of common factors that can help you understand your needs better:</p>
-    <br>
-    <p>Size of the area where the furniture will be placed</p>
-    <br><p>Size of the furniture</p>
-    <br><p>Purpose of the furniture, whether bed, sofa, or cabinet</p>
-    <br><p>Features of the furniture</p>
-    <br><p>Its material, design, and color</p>
-    <br><p>Your budget</p>
-    <br><p>Who said furniture should only fulfill its purpose? You can go a mile extra with your creativity skills by mixing and matching different furniture designs to beautify your home dcor. For example, you can set up quirky benches as a seating arrangement instead of sofas in the living area and amp up the liveliness of your home. Similarly, your bedroom furniture design reflects your personality, so it is all in the way you style it, then be it a modular wardrobe or a loft bed with storage and desk functionality.</p>
-    <br><h2>Exclusive Range of Furniture Online</h2>
-    <br><p>Pepperfry.com is the best place to buy metal as well as wooden furniture online in India. Here at Pepperfry, we are committed to offering our customers the widest range in home furniture like tables, sofas, chairs for living room as well as beds, sofa set, wardrobes, side tables, dressing tables for bedroom and crockery cabinets, chest of drawers for kitchen especially in solid wood and sheesham furniture designs, so that it is easy and hassle free to buy furniture online. Our furniture is intelligently designed to give both comfort and functionality; while we also go to great lengths to ensure that we source only the highest quality raw materials and use the latest technologies to manufacture each individual piece.</p>
-    <br><h2>Wooden Furniture in Solid Wood & Sheesham Designs</h2>
-    <br><p>Our exhaustive range offers multiple options in solid, mango, teak, rubber, acacia, ply, engineered and sheesham wood furniture pieces, while all our wooden furniture can also be customized to suit the individual needs of our customers. We also offer solid wood furniture in beds, dining tables, shoe racks, storage and reception cabinets at our online marketplace. See various sofa designs side by side, compare prices and finishes and find exclusive modular furniture pieces that you would not find at local furniture stores.</p>
-    <br><h2>Browse Furniture by Room Type -</h2>
-    <br><p>Living Room Furniture Living room consists of your stylish and trending sofas, chairs and tables. They should be exquisitely designed and comfortable to sit on. These furniture pieces escalate the aesthetic appeal of your home.</p>
-    <br>
-    <br><p>Dining Room Furniture Apart from looking good, dining room furniture should also be efficient and robust, these include tables, chairs and cabinets. Always remember to emphasize on quality over quantity when it comes to dining room furniture.</p>
-    <br><p>Study Room Furniture A place to study and indulge in your passion for books. Study room consists of shelves, cases, cabinets and tables. They should be brilliantly designed and efficient to utilize.</p>
-    <br><p>Bedroom Furniture A room where you retire for the day should always be cozy and comfy. Bed room furniture include bedside tables, mattresses, dressing tables, beds and wardrobes. Its a combination of storage furniture pieces and bedroom essentials, ensure you get the best ones.</p>
-    <br><p>Kids Room Furniture A kids room requires colorful, safe and robust furniture pieces. Kids room consists of beds, bedside and study tables, cradles, sofas and book shelves. Do not compromise on quality while grabbing furniture for your kids room.</p>
-    <br><p>Outdoor Furniture Needless to say these furniture pieces do not have the comfort of being installed inside of your home, so they have to be sturdy and robust to handle the changing weather conditions. Outdoor furniture consist of chairs, swings, loungers, dining sets and tables. Grab these manufactured by reputed brands.</p>
-    <br><p>You can also avail discounts & offers on wide range of Decor, Modular Kitchen, Carpets, Mattress, Kitchenware and Home Utilities products, that suit your need. So go ahead now and take a good look at our online furniture shopping store.</p><br>
-    <br><h2>Frequently Asked Questions</h2>
-    <br><h2>What is the most popular furniture style?</h2>
-    <br><p>The most popular furniture styles include rustic farmhouse, modern, glam, and traditional. The chances of these furniture styles going out of trend are minimal.</p>
-    <br><h2>What are the latest trends in furniture?</h2>
-    <br><p>The latest trends in furniture include bamboo furniture, denim, jungle prints and neutral palette upholstered furniture, multi-functional furniture, unique metal furniture, and artisan-inspired furniture.</p>
-    <br>
-    <br><h2>What wood is best for furniture?</h2>
-    <br><p>Hardwoods such as maple, oak, teak, mahogany, walnut, ash, acacia are some of the most commonly used wood types that are best for furniture.</p><br><br>
-
-    <br>
-    </header>
+        </header>
+    <div class="mainBody">
+        <div class="top1">
+            <div id="side">
+                <h1>Furniture</h1><br>
+                <p><a style="color: black; text-decoration: none;" href="./furnitureSofa.html" target="_blank">Sofas</a></p>
+                <p>Recliners</p>
+                <p>Sofa Chairs</p>
+                <p>Office Chairs</p>
+                <p>Gaming Chairs</p>
+                <p>Bean Bags</p>
+                <p>Chairs</p>
+                <p>Seating</p>
+                <p>Centre Tables</p>
+                <p>Entertainment Units</p>
+                <p>Shoe Racks</p>
+                 <p>Dining Sets</p>
+                <p>Shoe Racks</p>
+                <p>Dining Sets</p>
+                 <p>Dining Chairs</p>
+                 <p>Dining Tables</p>
+                <p>Console Tables</p>
+                 <p>Beds</p>  
+                <!-- <p>Bar Furniture</p>
+                <p>Dressing Tables</p>
+                <p>Wardrobes</p>
+                <p>Cabinetry</p>   -->
+            </div>
+            <div>
+                <img style="width: 100%;height: 300px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/Web_Furniture_Banner_2x_06Dec.jpg" alt="">
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Meet The Bestsellers</h1><br>
+        <div class="top2">
+            <div id="A">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_1.jpg" alt="">
+                <h3>2 Door Wardrobes</h3>
+                <p>50+ Options</p>
+            </div>
+            <div id="A">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_2.jpg" alt="">
+                <h3>Modern Writing Tables</h3>
+                <p>150+ Options</p>
+            </div>
+            <div id="A">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_3.jpg" alt="">
+                <h3>Queen Size Storage Beds</h3>
+                <p>150+ Options</p>
+            </div>
+            <div id="A">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_section3_web_05122022_4.jpg" alt="">
+                <h3>Gaming Chairs</h3>
+                <p>50+ Options</p>
+            </div>
+            <div id="A">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_5.jpg" alt="">
+                <h3>Shoe Cabinets</h3>
+                <p>50+ Options</p>
+            </div>
+            <div id="A">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section3_large_6.jpg" alt="">
+                <h3>Rectangular Coffee Tables</h3>
+                <p>150+ Options</p>
+            </div>
+        </div><br>
+        <h1 style="font-size:30px">It's A Big Deal</h1><br>
+        <div class="top3">
+            <div id="B">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_deal_web_20122022_1.jpg" alt="">
+                <h3>Family mealtime</h3>
+                <p>50+ Modern dining sets</p>
+            </div>
+            <div id="B">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furniture_section4_web_05122022_2.jpg" alt="">
+                <h3>Comfy Bean Bags</h3>
+                <p>50+ Bean Bags</p>
+            </div>
+            <div id="B">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_deal_web_20122022_3.jpg" alt="">
+                <h3>Budgets Buys For Nerds</h3>
+                <p>40+ Modern Books Shelves</p>
+            </div>
+            <div id="B">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_section4_web_05122022_4.jpg" alt="">
+                <h3>Chic Dressers</h3>
+                <p>50+ Dressers</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">What's #Trending?</h1><br>
+        <div class="top4">
+            <div id="C">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section5_large_1.jpg" alt="">
+                <h3>Me-Time Nook </h3>
+                <p>40+ Printed Wing Chairs</p>
+            </div>
+            <div id="C">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_section5_web_05122022_2.jpg" alt="">
+                <h3>Sofa Cum Bed</h3>
+                <p>15+ Innovative Designs</p>
+            </div>
+            <div id="C">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section5_large_3.jpg" alt="">
+                <h3>Majestic Marble</h3>
+                <p>20+ Top End Marble Tables</p>
+            </div>
+            <div id="C">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section5_large_4.jpg" alt="">
+                <h3>The Binge Corners</h3>
+                <p>120+ TV Units</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Discover New Launches</h1><br>
+        <div class="top5">
+            <div id="D">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_section6_web_05122022_1.jpg" alt="">
+                <h3>Classic:Sheraton Range</h3>
+                <p>Important Latin teak Furniture</p>
+            </div>
+            <div id="D">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_section6_web_05122022_2.jpg" alt="">
+                <h3>Smartsters</h3>
+                <p>Spaces for Children To Blossom</p>
+            </div>
+            <div id="D">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furniture_section6_web_05122022_3.jpg" alt="">
+                <h3>Neudot</h3>
+                <p>Smart Home Furniture Solutions</p>
+            </div>
+            <div id="D">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_section6_web_05122022_4.jpg" alt="">
+                <h3>Woodbuzz</h3>
+                <p>For Modern & Colourful Homes</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Your Style Chooses You</h1><br>
+        <div class="top6">
+            <div id="E">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section7_large_1.jpg" alt="">
+            </div>
+            <div id="E">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section7_large_2.jpg" alt="">
+            </div>
+            <div id="E">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section7_large_3.jpg" alt="">
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Top Brands To Choose From</h1><br>
+        <div class="top7">
+            <div id="F">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section_large_1.jpg" alt="">
+                <h3>2150+ Options</h3>
+                <p>Popular For Dining</p>
+            </div>
+            <div id="F">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section_large_2.jpg" alt="">
+                <h3>900+ Options</h3>
+                <p>Popular For Sofas</p>
+            </div>
+            <div id="F">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furnitureclp_Section_large_3.jpg" alt="">
+                <h3>600+ Options</h3>
+                <p>Popular For Wardrobes</p>
+            </div>
+            <div id="F">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Furniture_section7_web_05122022_1.jpg" alt="">
+                <h3>200+ Options</h3>
+                <p>Popular For Entertainment Units</p>
+            </div>
+            <div id="F">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Furniture_section7_web_05122022_2.jpg" alt="">
+                <h3>150+ Options</h3>
+                <p>Popular For Sideboards</p>
+            </div>
+            <div id="F">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/Furniture_section7_web_05122022_3.jpg" alt="">
+                <h3>150+ Options</h3>
+                <p>Popular For Recliners</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Customers Speak</h1><br>
+        <div class="top8">
+            <div id="seven">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_7.jpg" alt="">
+                <h3>Bought these two grey puffy stools from pepperfry. Found them to be surprisingly strong! Blends perfectly with our theme, too!</h3>
+                <h4>Suman Senapatia</h4>
+                <p>Visakhapatnam</p>
+            </div>
+            <div id="seven">
+                <img style="height: 200px;width: 500px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/happy_customer_block_2_2906_0222.png" alt="">
+                <h3>I purchased Candy Study Chair in Pink Colour by Alex Daisy from pepperfry looks awesome and My daughter loves and spend most of the time during her home school sessions. I am happy with my choice to give a Gift to my daughter.</h3>
+                <h4>Satya Madhana</h4>
+                <p>Secunderabad</p>
+            </div>
+            <div id="seven">
+                <img  src="https://ii3.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_9.jpg" alt="">
+                <h3>Purchased an ergonomic chair, I thought it would not be fitting for me but once it got delivered, got it assembled then and there. Now, I am just loving it. Will suggest pepperfry.</h3>
+                <h4>Baba Kattubadi</h4>
+                <p>Hyderabad</p>
+            </div>
+        </div><br>
+        <h1 style="font-size: 30px;">Need Help Buying?</h1><br>
+        <div class="top9">
+            <div id="eight">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_1.jpg" alt="">
+                <p>Here's How To Choose The Right Sofa</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_2.jpg" alt="">
+                <p>How To Buy A Perfect Bed For Your Room</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_3.jpg" alt="">
+                <p>Your Guide To Buy The Perfect Mattress</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_4.jpg" alt="">
+                <p>Everything About Cabinets And Sideboards</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_5.jpg" alt="">
+                <p>What To Look For While Buying A Chair</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_6.jpg" alt="">
+                <p>Talk To Our Expert</p>
+            </div>
+        </div><br><br>
+        <h2>Buy Wooden Furniture Online</h2><br>
+        <br><p>Buy furniture online @ Pepperfry - India's largest home shopping destination offering a wide range of home and office furniture online. Choosing the right furniture for your home online will add elegance and functionality to your interior decor, while it will also be cost effective and long lasting at the same time. Enjoy fast shipping as well as cash on delivery at our online store.</p>
+        <br><h2>Things to Consider Before Buying Furniture</h2>
+        <br><p>There are so many furniture designs available nowadays. Looking at these, you may end up in a confusion of which one to buy. However, you must understand your requirements before purchasing the furniture. Here is a list of common factors that can help you understand your needs better:</p>
+        <br>
+        <p>Size of the area where the furniture will be placed</p>
+        <br><p>Size of the furniture</p>
+        <br><p>Purpose of the furniture, whether bed, sofa, or cabinet</p>
+        <br><p>Features of the furniture</p>
+        <br><p>Its material, design, and color</p>
+        <br><p>Your budget</p>
+        <br><p>Who said furniture should only fulfill its purpose? You can go a mile extra with your creativity skills by mixing and matching different furniture designs to beautify your home dcor. For example, you can set up quirky benches as a seating arrangement instead of sofas in the living area and amp up the liveliness of your home. Similarly, your bedroom furniture design reflects your personality, so it is all in the way you style it, then be it a modular wardrobe or a loft bed with storage and desk functionality.</p>
+        <br><h2>Exclusive Range of Furniture Online</h2>
+        <br><p>Pepperfry.com is the best place to buy metal as well as wooden furniture online in India. Here at Pepperfry, we are committed to offering our customers the widest range in home furniture like tables, sofas, chairs for living room as well as beds, sofa set, wardrobes, side tables, dressing tables for bedroom and crockery cabinets, chest of drawers for kitchen especially in solid wood and sheesham furniture designs, so that it is easy and hassle free to buy furniture online. Our furniture is intelligently designed to give both comfort and functionality; while we also go to great lengths to ensure that we source only the highest quality raw materials and use the latest technologies to manufacture each individual piece.</p>
+        <br><h2>Wooden Furniture in Solid Wood & Sheesham Designs</h2>
+        <br><p>Our exhaustive range offers multiple options in solid, mango, teak, rubber, acacia, ply, engineered and sheesham wood furniture pieces, while all our wooden furniture can also be customized to suit the individual needs of our customers. We also offer solid wood furniture in beds, dining tables, shoe racks, storage and reception cabinets at our online marketplace. See various sofa designs side by side, compare prices and finishes and find exclusive modular furniture pieces that you would not find at local furniture stores.</p>
+        <br><h2>Browse Furniture by Room Type -</h2>
+        <br><p>Living Room Furniture Living room consists of your stylish and trending sofas, chairs and tables. They should be exquisitely designed and comfortable to sit on. These furniture pieces escalate the aesthetic appeal of your home.</p>
+        <br>
+        <br><p>Dining Room Furniture Apart from looking good, dining room furniture should also be efficient and robust, these include tables, chairs and cabinets. Always remember to emphasize on quality over quantity when it comes to dining room furniture.</p>
+        <br><p>Study Room Furniture A place to study and indulge in your passion for books. Study room consists of shelves, cases, cabinets and tables. They should be brilliantly designed and efficient to utilize.</p>
+        <br><p>Bedroom Furniture A room where you retire for the day should always be cozy and comfy. Bed room furniture include bedside tables, mattresses, dressing tables, beds and wardrobes. Its a combination of storage furniture pieces and bedroom essentials, ensure you get the best ones.</p>
+        <br><p>Kids Room Furniture A kids room requires colorful, safe and robust furniture pieces. Kids room consists of beds, bedside and study tables, cradles, sofas and book shelves. Do not compromise on quality while grabbing furniture for your kids room.</p>
+        <br><p>Outdoor Furniture Needless to say these furniture pieces do not have the comfort of being installed inside of your home, so they have to be sturdy and robust to handle the changing weather conditions. Outdoor furniture consist of chairs, swings, loungers, dining sets and tables. Grab these manufactured by reputed brands.</p>
+        <br><p>You can also avail discounts & offers on wide range of Decor, Modular Kitchen, Carpets, Mattress, Kitchenware and Home Utilities products, that suit your need. So go ahead now and take a good look at our online furniture shopping store.</p><br>
+        <br><h2>Frequently Asked Questions</h2>
+        <br><h2>What is the most popular furniture style?</h2>
+        <br><p>The most popular furniture styles include rustic farmhouse, modern, glam, and traditional. The chances of these furniture styles going out of trend are minimal.</p>
+        <br><h2>What are the latest trends in furniture?</h2>
+        <br><p>The latest trends in furniture include bamboo furniture, denim, jungle prints and neutral palette upholstered furniture, multi-functional furniture, unique metal furniture, and artisan-inspired furniture.</p>
+        <br>
+        <br><h2>What wood is best for furniture?</h2>
+        <br><p>Hardwoods such as maple, oak, teak, mahogany, walnut, ash, acacia are some of the most commonly used wood types that are best for furniture.</p><br><br>
+    
+        <br>
+    </div>
     <footer>
-        <!-- ***********************************div1********************************************************** -->
+        <!-- ************************************div1*********************************************************** -->
         <div>
             <div>
-                <h3>Useful Links</h3>
+                <h2>Useful Links</h2>
                 <a href="">About Us</a>
                 <a href="">Our Blog</a>
                 <a href="">Careers</a>
@@ -996,7 +998,7 @@ footer>div:nth-child(4) div{
                 <a href="">Customer Reviews</a>
             </div>
             <div>
-                <h3>Partners</h3>
+                <h2>Partners</h2>
                 <a href="">Sell With Us</a>
                 <a href="">Become a Franchisee</a>
                 <a href="">Become a Pep Homie</a>
@@ -1007,7 +1009,7 @@ footer>div:nth-child(4) div{
                 <a href="">Corporate Enquiries</a>
             </div>
             <div>
-                <h3>Need Help?</h3>
+                <h2>Need Help?</h2>
                 <a href="">Contact Us</a>
                 <a href="">Returns & Refund</a>
                 <a href="">Track Your Order</a>
@@ -1015,17 +1017,18 @@ footer>div:nth-child(4) div{
                 <a href="">Buy on Phone</a>
             </div>
             <div>
-                <h3>Download App</h3>
+                <h2>Download App</h2>
                 <a href="https://apps.apple.com/in/app/pepperfry/id972047429"><img
-                        src="https://e7.pngegg.com/pngimages/718/1015/png-clipart-app-store-apple-google-play-apple-text-logo.png"
+                        src="./images/download (1).png"
                         alt="Download App"></a>
-                 <img style="padding-right: 0%;" src="https://tse2.mm.bing.net/th?id=OIP.GZhmkG200Ppz-ezObC3JfQHaCi&pid=Api&P=0" alt="">
+                <a href="https://play.google.com/store/apps/details?id=com.app.pepperfry&pli=1"><img
+                        src="./images/download.png" alt="Download App"></a>
             </div>
         </div>
-        <!-- ***********************************div2********************************************************** -->
+        <!-- ************************************div2*********************************************************** -->
         <div>
             <div>
-                <h3>Popular Categories</h3>
+                <h2>Popular Categories</h2>
                 <a href="#">Queen Size Beds, King Size Beds, Coffee Tables, Dining Sets, Recliners, Sofa cum Beds,
                     Rocking Chairs, Cabinets, Book Shelves, TV Unit, Wardrobes, Outdoor Furniture, Bar Cabinets, Wall
                     Shelves, Photo Frames, Bed Sheets, Mattresses, Table Cloth, Living Room Furniture, Study Tables,
@@ -1033,7 +1036,7 @@ footer>div:nth-child(4) div{
                     Trundle Bed</a>
             </div>
             <div>
-                <h3>Popular Brands</h3>
+                <h2>Popular Brands</h2>
                 <a href="#">Mintwud, Woodsworth, CasaCraft, Amberville, Mudramark, Bohemiana, Clouddio, Spacewood,
                     Durian, Green Soul, Godrej Interio, Nilkamal, Orange Tree , HomeTown , Duroflex , Sleepyhead , Peps
                     India , NestAsia , Jaipur Rugs , Obettee , Eliante by Jainsons , @Home , Bombay Dyeing , Kapoor E
@@ -1041,35 +1044,24 @@ footer>div:nth-child(4) div{
                     Mehta</a>
             </div>
             <div>
-                <h3>Cities we deliver to</h3>
+                <h2>Cities we deliver to</h2>
                 <a href="#">Bengaluru, Mumbai, Navi Mumbai, Delhi, Hyderabad, Pune, Chennai, Gurgaon, Kolkata, Noida,
                     Goa, Ghaziabad, Ahmedabad, Coimbatore, Faridabad, Jaipur, Lucknow, Kochi, Visakhapatnam, Chandigarh,
                     Vadodara, Nagpur, Thiruvananthapuram, Indore, Mysore, Bhopal, Surat, Jalandhar, Patna, Ludhiana,
                     Nashik, Madurai, Kanpur, Aurangabad and many more</a>
             </div>
         </div>
-        <!-- ***********************************div3********************************************************** -->
+        <!-- ************************************div3*********************************************************** -->
         <div>
-            <div id="visa">
-
-                <div>
-                    <h3>We Accept</h3><br>
-                    <img style="height: 50%;width: 35%;" src="https://tse3.mm.bing.net/th?id=OIP.ah9LG1cJajShwcxSZQ2WeAHaHa&pid=Api&P=0" alt=""><br><br>
-                <img style="height: 40%;width: 35%;" src="https://tse2.mm.bing.net/th?id=OIP.9FNJf35UgibeDuU6t7zh_wHaCO&pid=Api&P=0" alt="jyfjcjyf"><br>
-                
-                </div>
-                <div>
-                <img style="padding-right: 200%;" src="projectVisa.jpg" alt="">
-                    
-                </div>
+            <div>
+                <h2>We Accept</h2>
+                <img src="./images/Capture.PNG" alt="jyfjcjyf">
             </div>
-        
-            <div id="LastImages">
-                <h3>Like what you see? You'll like us even more here</h3><br><br>
+            <div>
+                <h2>Like what you see? You'll like us even more here</h2>
                 <div class="footer-icons">
                     <a href="https://www.facebook.com/Pepperfry" target="_blank" class="facebook-icon"><i
-                        class="fab fa-facebook-f"></i></a>
-
+                            class="fab fa-facebook-f"></i></a>
                     <a href="https://twitter.com/pepperfry" target="_blank" class="twitter-icon"><i
                             class="fab fa-twitter"></i></a>
                     <a href="https://www.youtube.com/user/Pepperfrytv" target="_blank" class="youtube-icon"><i
@@ -1082,17 +1074,20 @@ footer>div:nth-child(4) div{
                             class="fab fa-pinterest-p"></i></a>
                 </div>
             </div>
-        </div>   
-        
-
-        <!-- ***********************************div4********************************************************** -->
-        
-        <div class="top14">
+        </div>
+        <!-- ************************************div4*********************************************************** -->
+        <div>
             <div>
-                <p style="word-spacing: 55px">BuyInBulk WriteATestimonial</p>
+                <p>Buy In Bulk</p>
+                <p>Write A Testimonial</p>
             </div>
             <div>
-                <p style="word-spacing: 55px">WhitehatSiteMap TermsOfUse PrivacyPolicy YourData&Security GrievanceRedressal</p>
+                <p>Whitehat</p>
+                <p>Site Map</p>
+                <p>Terms Of Use</p>
+                <p>Privacy Policy</p>
+                <p>Your Data & Security </p>
+                <p>Grievance Redressal</p>
             </div>
         </div>
     </footer>

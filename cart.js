@@ -63,7 +63,7 @@ let removeBtn=document.createElement("button");
     })
         
 buyBtn=document.createElement("a");
-buyBtn.setAttribute("href","#");
+buyBtn.setAttribute("href","./checkout.html");
 buyBtn.setAttribute("target","_main");
 buyBtn.innerText="Buy Now"
 

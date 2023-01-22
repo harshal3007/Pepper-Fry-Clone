@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kitchen and Dining</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/mn.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/<your-kit-code>.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -18,11 +19,6 @@
     padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      /* width: 96%;  */
-}
-header{
-    width: 95%;
-    padding-left: 3%;
-    
 }
 
 /* **************************************** Header-div ************************************************** */
@@ -440,69 +436,72 @@ footer>div:nth-child(4) div{
             #LastImages{
                 width: 40%;
             }
+            .mainBody{
+                width: 95%;
+                margin:auto;
+            }
 </style>
 
 </head>
 <body>
         <!-- ***********************************Header********************************************************** -->
         <header>
-            <!-- ***********************************header-div********************************************************** -->
-                <div id="header-div">
-                    <div>
-                        <a href="#">Sell on Pepperfry</a>
-                        <a href="#">Become a Franchisee</a>
-                        <a href="#">Buy in Bulk</a>
-                        <a href="#">Find a Studio</a>
-                        <a href="#">Find Design Inspiration</a>
+            <!-- ************************************header-div*********************************************************** -->
+            <div id="header-div">
+                <div>
+                    <a href="#">Sell on Pepperfry</a>
+                    <a href="#">Become a Franchisee</a>
+                    <a href="#">Buy in Bulk</a>
+                    <a href="#">Find a Studio</a>
+                    <a href="#">Find Design Inspiration</a>
+                </div>
+                <div>
+                    <a href="#">Enter pincode</a>
+                    <a href="#">Find Pepperfry studio</a>
+                </div>
+            </div>
+            <!-- ************************************Nav*********************************************************** -->
+            <nav>
+                <div>
+                    <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                </div>
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="Your door to happiness opens with a search">
+                    <button class="search__button">
+                        <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="icon">
+                    <div class="icon_box">
+                        <a style="color: black;" href="./login.html" target="_blank"><i class="far fa-user"></i></a>
                     </div>
-                    <div>
-                        <a href="#">Enter pincode</a>
-                        <a href="#">Find Pepperfry studio</a>
+                    <div class="icon_box">
+                       <a style="color: black;" href="#"><i class="far fa-heart"></i></a> 
+                    </div>
+                    <div class="icon_box">
+                        <a style="color: black;" href="./cart.html" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="icon_box">
+                       <a  style="color: black;" href="#"> <i class="fas fa-truck-moving"></i></a>
                     </div>
                 </div>
-            <!-- ***********************************Nav********************************************************** -->
-                <nav>
-                    <div>
-                         <img src="pepperflylogo.jpg" alt="logo"> 
-                        <!-- <h1 style="color:rgb(253, 94, 3);;font-size: 40px;font-style:italic;">Pepperfry</h1> -->
-                    </div>
-                    <div class="search">
-                        <input type="text" class="search__input" placeholder="Your door to happiness opens with a search">
-                        <button class="search__button">
-                            <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
-                                <g>
-                                    <path
-                                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                    </path>
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="icon">
-                        <div class="icon_box">
-                            <i class="far fa-user"></i>
-                        </div>
-                        <div class="icon_box">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="icon_box">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="icon_box">
-                            <i class="fas fa-truck-moving"></i>
-                        </div>
-                    </div>
-                </nav>
-            <!-- ***********************************Dropdown Menu********************************************************** -->
+            </nav>
+            <!-- ************************************Dropdown Menu*********************************************************** -->
             <div class="dropdown">
                 <ul>
                     <li>
-                        <a href="./FurniShings.html">Furniture</a>
+                        <a href="./Furniture.html">Furniture</a>
                         <div class="dropdown-content">
                             <div class="row">
                                 <div class="col">
                                     <div>
-                                        <h6>Sofas</h6>
+                                       <h6>Sofas</h6>
                                         <a href="#">3 Seater Sofas</a>
                                         <a href="#">2 Seater Sofas</a>
                                         <a href="#">1 Seater Sofas</a>
@@ -521,7 +520,7 @@ footer>div:nth-child(4) div{
                                         <a href="#">3 Seater</a>
                                         <a href="#">Recliner Sets</a>
                                     </div>
-      
+    
                                 </div>
                                 <div class="col">
                                     <div>
@@ -705,258 +704,262 @@ footer>div:nth-child(4) div{
                             </div>
                         </div>
                     </li>
-                    <li><a href="#">Home Décor</a></li>
-                    <li><a href="#">Lamps & Lighting</a></li>
-                    <li><a href="#">Kitchen & Dining</a></li>
-                    <li><a href="#">Furnishings</a></li>
+                    <li><a href="./Home Decor.html">Home Décor</a></li>
+                    <li><a href="./Lamps and Lighting.html">Lamps & Lighting</a></li>
+                    <li><a href="./KichenAndDining.html">Kitchen & Dining</a></li>
+                    <li><a href="./FurniShings.html">Furnishings</a></li>
                     <li><a href="#">Mattresses</a></li>
-                    <li><a href="#">Appliances</a></li>
-                    <li><a href="#">Pets</a></li>
+                    <li><a href="./Appliences.html">Appliances</a></li>
+                    <li><a href="./Pets.html">Pets</a></li>
                     <li><a href="#">Modular</a></li>
                     <li><a href="#">Gift Cards</a></li>
                 </ul>
             </div>
-    <div class="top1">
-        <div id="side">
-            <h1>Kitchen & Dining</h1><br>
-            <p>Serveware</p>
-            <p>Teaware</p>
-            <p>Dinnerware</p>
-            <p>Drinkware</p>
-            <p>Barware</p>
-            <p>Knives and Cutlery</p>
-            <p>Table Essentials</p>
-            <p>Bakeware</p>
-            <p>Table Linen</p>
-            <p>Kitchen Organizers</p>
-            <p>Kitchen Linen</p>
+        </header>
+
+    <div class="mainBody">
+        <div class="top1">
+            <div id="side">
+                <h1>Kitchen & Dining</h1><br>
+                <p>Serveware</p>
+                <p>Teaware</p>
+                <p>Dinnerware</p>
+                <p>Drinkware</p>
+                <p>Barware</p>
+                <p>Knives and Cutlery</p>
+                <p>Table Essentials</p>
+                <p>Bakeware</p>
+                <p>Table Linen</p>
+                <p>Kitchen Organizers</p>
+                <p>Kitchen Linen</p>
+                
+            </div>
+            <div>
+                <img style="width: 100%;height: 300px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/Large_CLP_DiningBar_2x_050922.jpg" alt="">
+            </div>
+        </div><br><br>
+        <h1 style="font-size: 30px;">Meet The Bestsellers</h1><br>
+        <div class="top2">
+            <div id="A">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_1.jpg" alt=""><br>
+                <h3>The Table Is Set</h3>
+                <p>100+ Dinner Plates</p>
+            </div>
+            <div id="A">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_2.jpg" alt=""><br>
+                <h3>Impress Your Guests</h3>
+                <p>250+ Serving Trays</p>
+            </div>
+            <div id="A">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_3.jpg" alt=""><br>
+                <h3>Everyone's Cup Of Tea</h3>
+                <p>250+ Tea Cups and Saucers</p>
+            </div>
+            <div id="A">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_4.jpg" alt=""><br>
+                <h3>Keep The Table Tidy</h3>
+                <p>200+ Placemat Sets</p>
+            </div>
+            <div id="A">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_5.jpg" alt=""><br>
+                <h3>Stay Hydrated</h3>
+                <p>100+ Everyday Glasses</p>
+            </div>
+            <div id="A">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_6.jpg" alt=""><br>
+                <h3>Snack In Style</h3>
+                <p>250+ Serving Dishes</p>
+            </div>
             
-        </div>
-        <div>
-            <img style="width: 100%;height: 300px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/Large_CLP_DiningBar_2x_050922.jpg" alt="">
-        </div>
-    </div><br><br>
-    <h1 style="font-size: 30px;">Meet The Bestsellers</h1><br>
-    <div class="top2">
-        <div id="A">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_1.jpg" alt=""><br>
-            <h3>The Table Is Set</h3>
-            <p>100+ Dinner Plates</p>
-        </div>
-        <div id="A">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_2.jpg" alt=""><br>
-            <h3>Impress Your Guests</h3>
-            <p>250+ Serving Trays</p>
-        </div>
-        <div id="A">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_3.jpg" alt=""><br>
-            <h3>Everyone's Cup Of Tea</h3>
-            <p>250+ Tea Cups and Saucers</p>
-        </div>
-        <div id="A">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_4.jpg" alt=""><br>
-            <h3>Keep The Table Tidy</h3>
-            <p>200+ Placemat Sets</p>
-        </div>
-        <div id="A">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_5.jpg" alt=""><br>
-            <h3>Stay Hydrated</h3>
-            <p>100+ Everyday Glasses</p>
-        </div>
-        <div id="A">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_3_2309_6.jpg" alt=""><br>
-            <h3>Snack In Style</h3>
-            <p>250+ Serving Dishes</p>
-        </div>
-        
-        
-    </div><br><br> 
-    <h1 style="font-size:30px">It's A Big Deal</h1><br>
-    <div class="top3">
-        <div id="B">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Web_Deals_Block1_2x_30Nov.jpg" alt=""><br>
-            <h3>Icing On The Cake</h3>
-            <p>100+ Cake Stands</p>
-        </div>
-        <div id="B">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_4_2309_2.jpg" alt=""><br>
-            <h3>Fancy A Cuppa?</h3>
-            <p>10+ Coffee Mugs</p>
-        </div>
-        <div id="B">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_4_2309_3.jpg" alt=""><br>
-            <h3>Dress Your Table</h3>
-            <p>80+ Table Runners</p>
-        </div>
-        <div id="B">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Web_Deals_Block4_2x_30Nov.jpg" alt=""><br>
-            <h3>A Jar Of Happiness</h3>
-            <p>200+ Jars& Containers</p>
-        </div>
-        
-        
-    </div><br><br>
-    <h1 style="font-size: 30px;">What's #Trending?</h1><br>
-    <div class="top4">
-        <div id="C">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_5_2309_1.jpg" alt=""><br>
-            <h3>Romantic Times</h3>
-            <p>50+ Wine Glasses</p>
-        </div>
-        <div id="C">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_5_2309_2.jpg" alt=""><br>
-            <h3>A Stylish Start</h3>
-            <p>250+ Appetizer Platters</p>
-        </div>
-        <div id="C">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_5_2309_3.jpg" alt=""><br>
-            <h3>For Special Occasions</h3>
-            <p>270+ Dinner Bowls</p>
-        </div>
-        <div id="C">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_5_2309_4.jpg" alt=""><br>
-            <h3>Nom!Nom!Nom!</h3>
-            <p>160+ Cutlery Sets</p>
-        </div>
-        
-        
-    </div><br><br>
-    <h1 style="font-size: 30px;">Discover New Launches</h1><br>
-    <div class="top5">
-        <div id="D">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_6_2309_1.jpg" alt=""><br>
-            <h3>Pretty Pitchers</h3>
-            <p>30+ Carafes And Decater</p>
-        </div>
-        <div id="D">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_6_2309_2.jpg" alt=""><br>
-            <h3>Greet With Grace </h3>
-            <p>50+ Serveware</p>
-        </div>
-        <div id="D">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_6_2309_3.jpg" alt=""><br>
-            <h3>It's Tea Time </h3>
-            <p>80+ Teaware</p>
-        </div>
-        <div id="D">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_6_2309_4.jpg" alt=""><br>
-            <h3>Tipple Tools</h3>
-            <p>60+ Bar Tools</p>
-        </div>
-        
-    </div><br><br>
-    <h1 style="font-size: 30px;">Your Style Chooses You</h1><br>
-    <div class="top6">
-        <div id="E">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_7_2309_1.jpg" alt="">
-        </div>
-        <div id="E">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_7_2309_2.jpg" alt="">
-        </div>
-        <div id="E">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_7_2309_3.jpg" alt="">
-        </div>
-        
-    </div><br><br>
-    <h1 style="font-size: 30px;">Top Brands To Choose From</h1><br>
-    <div class="top7">
-        <div id="F">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_1.jpg" alt=""><br>
-            <h3>200+ Options</h3>
-            <p>Popular for Dinnerware</p>
-        </div>
-        <div id="F">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_2.jpg" alt=""><br>
-            <h3>180+ Options</h3>
-            <p>Popular for Serveware</p>
-        </div>
-        <div id="F">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_3.jpg" alt=""><br>
-            <h3>50+ Options</h3>
-            <p>Popular for Drinkware</p>
-        </div>
-        <div id="F">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_4.jpg" alt=""><br>
-            <h3>300+ Options</h3>
-            <p>Popular for Dinnerware</p>
-        </div>
-        <div id="F">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_5.jpg" alt=""><br>
-            <h3>130+ Options</h3>
-            <p>Popular for Serveware</p>
-        </div>
-        <div id="F">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_6.jpg" alt=""><br>
-            <h3>100+ Options</h3>
-            <p>Popular for Bakeware</p>
-        </div>
-        
-        
-    </div><br><br>
-    <h1 style="font-size: 30px;">Customers Speak</h1><br>
-    <div class="top8">
-        <div id="seven">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_7.jpg" alt="">
-            <h3>Bought these two grey puffy stools from pepperfry. Found them to be surprisingly strong! Blends perfectly with our theme, too!</h3>
-            <h4>Suman Senapatia</h4>
-            <p>Visakhapatnam</p>
-        </div>
-        <div id="seven">
-            <img style="height: 200px;width: 500px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/happy_customer_block_2_2906_0222.png" alt="">
-            <h3>I purchased Candy Study Chair in Pink Colour by Alex Daisy from pepperfry looks awesome and My daughter loves and spend most of the time during her home school sessions. I am happy with my choice to give a Gift to my daughter.</h3>
-            <h4>Satya Madhana</h4>
-            <p>Secunderabad</p>
-        </div>
-        <div id="seven">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_9.jpg" alt="">
-            <h3>Purchased an ergonomic chair, I thought it would not be fitting for me but once it got delivered, got it assembled then and there. Now, I am just loving it. Will suggest pepperfry.</h3>
-            <h4>Baba Kattubadi</h4>
-            <p>Hyderabad</p>
-        </div>
-    </div><br><br>
-    <h1 style="font-size: 30px;">Need Help Buying?</h1><br>
-    <div class="top9">
-        <div id="eight">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_1.jpg" alt="">
-            <p>Here's How To Choose The Right Sofa</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_2.jpg" alt="">
-            <p>How To Buy A Perfect Bed For Your Room</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_3.jpg" alt="">
-            <p>Your Guide To Buy The Perfect Mattress</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_4.jpg" alt="">
-            <p>Everything About Cabinets And Sideboards</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_5.jpg" alt="">
-            <p>What To Look For While Buying A Chair</p>
-        </div>
-        <div id="eight">
-            <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_6.jpg" alt="">
-            <p>Talk To Our Expert</p>
-        </div>
-    </div><br><br>
-    <h3>Buy Kitchen & Dining Products Online At Affordable Prices</h3><br>
-    <p>Buying kitchen and dining products at home has been a rite of passage for many generations. As such, the teetering array of kitchen and dining products in the modern era have evolved from the standardized offerings of yesteryear to include a wide range of quality and unique appliances and products. The best way to go about selecting the right appliances and products for your home is to research the right kitchen and dining products for your needs.</p><br>
-    <p>It is frequently stated that you eat with your eyes. It is not enough to make and serve delicious cuisine; it must also look appealing. This is why elegant kitchen & dining products have become the new standard in excellent serveware. Looking for a serving set that can stand up to your cooking? Get serving products with Pepperfry</p><br>
-    <h3>Buying Kitchen and Dining Products at Home</h3><br>
-    <p>Shopping for serveware, teaware, and dinnerware is one of the most exciting parts of setting up your dining space, given just how much there is to choose from!</p><br>
-    <p>Right from elaborate dinner sets to classic crockery pieces that you can mix and match, chic coffee mugs for your everyday caffeine fix, and elegant teacups that will enhance your afternoon soirees, your tableware can truly reflect your personality in the most innovative manner.</p><br>
-    <p>Pepperfry dinnerware can totally transform your dining space, and the greatest thing is that it can be changed regularly without costing a large investment.</p><br>
-    <h3>Why Should You Buy Kitchen & Dining Products from Pepperfry</h3><br>
-    <p>As far as kitchen and dining products at home go, it can be challenging to find the right products to suit your family's needs. Hence, the search for the best kitchen and dining products at home ends at Pepperfry.</p><br>
-    <p>Pepperfry offers plenty of kitchen and dining products to help you find the right products for your needs. It's no secret that the kitchen is the heart of the home and thus, a well-stocked kitchen and dining room is a good way to keep the family happy. As such, it is imperative that you invest in quality products and materials in order to maintain a positive and productive atmosphere. A well stocked kitchen and dining room not only makes meal preparation a breeze, but also enables you to spend more time with your family and enjoy a smorgasbord of foods.</p><br><br><br>
-    </header>
+            
+        </div><br><br> 
+        <h1 style="font-size:30px">It's A Big Deal</h1><br>
+        <div class="top3">
+            <div id="B">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Web_Deals_Block1_2x_30Nov.jpg" alt=""><br>
+                <h3>Icing On The Cake</h3>
+                <p>100+ Cake Stands</p>
+            </div>
+            <div id="B">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_4_2309_2.jpg" alt=""><br>
+                <h3>Fancy A Cuppa?</h3>
+                <p>10+ Coffee Mugs</p>
+            </div>
+            <div id="B">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_4_2309_3.jpg" alt=""><br>
+                <h3>Dress Your Table</h3>
+                <p>80+ Table Runners</p>
+            </div>
+            <div id="B">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Web_Deals_Block4_2x_30Nov.jpg" alt=""><br>
+                <h3>A Jar Of Happiness</h3>
+                <p>200+ Jars& Containers</p>
+            </div>
+            
+            
+        </div><br><br>
+        <h1 style="font-size: 30px;">What's #Trending?</h1><br>
+        <div class="top4">
+            <div id="C">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_5_2309_1.jpg" alt=""><br>
+                <h3>Romantic Times</h3>
+                <p>50+ Wine Glasses</p>
+            </div>
+            <div id="C">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_5_2309_2.jpg" alt=""><br>
+                <h3>A Stylish Start</h3>
+                <p>250+ Appetizer Platters</p>
+            </div>
+            <div id="C">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_5_2309_3.jpg" alt=""><br>
+                <h3>For Special Occasions</h3>
+                <p>270+ Dinner Bowls</p>
+            </div>
+            <div id="C">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_5_2309_4.jpg" alt=""><br>
+                <h3>Nom!Nom!Nom!</h3>
+                <p>160+ Cutlery Sets</p>
+            </div>
+            
+            
+        </div><br><br>
+        <h1 style="font-size: 30px;">Discover New Launches</h1><br>
+        <div class="top5">
+            <div id="D">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_6_2309_1.jpg" alt=""><br>
+                <h3>Pretty Pitchers</h3>
+                <p>30+ Carafes And Decater</p>
+            </div>
+            <div id="D">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_6_2309_2.jpg" alt=""><br>
+                <h3>Greet With Grace </h3>
+                <p>50+ Serveware</p>
+            </div>
+            <div id="D">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_6_2309_3.jpg" alt=""><br>
+                <h3>It's Tea Time </h3>
+                <p>80+ Teaware</p>
+            </div>
+            <div id="D">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_6_2309_4.jpg" alt=""><br>
+                <h3>Tipple Tools</h3>
+                <p>60+ Bar Tools</p>
+            </div>
+            
+        </div><br><br>
+        <h1 style="font-size: 30px;">Your Style Chooses You</h1><br>
+        <div class="top6">
+            <div id="E">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_7_2309_1.jpg" alt="">
+            </div>
+            <div id="E">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_7_2309_2.jpg" alt="">
+            </div>
+            <div id="E">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_7_2309_3.jpg" alt="">
+            </div>
+            
+        </div><br><br>
+        <h1 style="font-size: 30px;">Top Brands To Choose From</h1><br>
+        <div class="top7">
+            <div id="F">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_1.jpg" alt=""><br>
+                <h3>200+ Options</h3>
+                <p>Popular for Dinnerware</p>
+            </div>
+            <div id="F">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_2.jpg" alt=""><br>
+                <h3>180+ Options</h3>
+                <p>Popular for Serveware</p>
+            </div>
+            <div id="F">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_3.jpg" alt=""><br>
+                <h3>50+ Options</h3>
+                <p>Popular for Drinkware</p>
+            </div>
+            <div id="F">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_4.jpg" alt=""><br>
+                <h3>300+ Options</h3>
+                <p>Popular for Dinnerware</p>
+            </div>
+            <div id="F">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_5.jpg" alt=""><br>
+                <h3>130+ Options</h3>
+                <p>Popular for Serveware</p>
+            </div>
+            <div id="F">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/db_web_sec_8_2309_6.jpg" alt=""><br>
+                <h3>100+ Options</h3>
+                <p>Popular for Bakeware</p>
+            </div>
+            
+            
+        </div><br><br>
+        <h1 style="font-size: 30px;">Customers Speak</h1><br>
+        <div class="top8">
+            <div id="seven">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_7.jpg" alt="">
+                <h3>Bought these two grey puffy stools from pepperfry. Found them to be surprisingly strong! Blends perfectly with our theme, too!</h3>
+                <h4>Suman Senapatia</h4>
+                <p>Visakhapatnam</p>
+            </div>
+            <div id="seven">
+                <img style="height: 200px;width: 500px;" src="https://ii1.pepperfry.com/media/wysiwyg/banners/happy_customer_block_2_2906_0222.png" alt="">
+                <h3>I purchased Candy Study Chair in Pink Colour by Alex Daisy from pepperfry looks awesome and My daughter loves and spend most of the time during her home school sessions. I am happy with my choice to give a Gift to my daughter.</h3>
+                <h4>Satya Madhana</h4>
+                <p>Secunderabad</p>
+            </div>
+            <div id="seven">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/Testimonial_web_261221_9.jpg" alt="">
+                <h3>Purchased an ergonomic chair, I thought it would not be fitting for me but once it got delivered, got it assembled then and there. Now, I am just loving it. Will suggest pepperfry.</h3>
+                <h4>Baba Kattubadi</h4>
+                <p>Hyderabad</p>
+            </div>
+        </div><br><br>
+        <h1 style="font-size: 30px;">Need Help Buying?</h1><br>
+        <div class="top9">
+            <div id="eight">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_1.jpg" alt="">
+                <p>Here's How To Choose The Right Sofa</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_2.jpg" alt="">
+                <p>How To Buy A Perfect Bed For Your Room</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_3.jpg" alt="">
+                <p>Your Guide To Buy The Perfect Mattress</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii2.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_4.jpg" alt="">
+                <p>Everything About Cabinets And Sideboards</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii3.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_5.jpg" alt="">
+                <p>What To Look For While Buying A Chair</p>
+            </div>
+            <div id="eight">
+                <img src="https://ii1.pepperfry.com/media/wysiwyg/banners/hp_need_help_p_6.jpg" alt="">
+                <p>Talk To Our Expert</p>
+            </div>
+        </div><br><br>
+        <h3>Buy Kitchen & Dining Products Online At Affordable Prices</h3><br>
+        <p>Buying kitchen and dining products at home has been a rite of passage for many generations. As such, the teetering array of kitchen and dining products in the modern era have evolved from the standardized offerings of yesteryear to include a wide range of quality and unique appliances and products. The best way to go about selecting the right appliances and products for your home is to research the right kitchen and dining products for your needs.</p><br>
+        <p>It is frequently stated that you eat with your eyes. It is not enough to make and serve delicious cuisine; it must also look appealing. This is why elegant kitchen & dining products have become the new standard in excellent serveware. Looking for a serving set that can stand up to your cooking? Get serving products with Pepperfry</p><br>
+        <h3>Buying Kitchen and Dining Products at Home</h3><br>
+        <p>Shopping for serveware, teaware, and dinnerware is one of the most exciting parts of setting up your dining space, given just how much there is to choose from!</p><br>
+        <p>Right from elaborate dinner sets to classic crockery pieces that you can mix and match, chic coffee mugs for your everyday caffeine fix, and elegant teacups that will enhance your afternoon soirees, your tableware can truly reflect your personality in the most innovative manner.</p><br>
+        <p>Pepperfry dinnerware can totally transform your dining space, and the greatest thing is that it can be changed regularly without costing a large investment.</p><br>
+        <h3>Why Should You Buy Kitchen & Dining Products from Pepperfry</h3><br>
+        <p>As far as kitchen and dining products at home go, it can be challenging to find the right products to suit your family's needs. Hence, the search for the best kitchen and dining products at home ends at Pepperfry.</p><br>
+        <p>Pepperfry offers plenty of kitchen and dining products to help you find the right products for your needs. It's no secret that the kitchen is the heart of the home and thus, a well-stocked kitchen and dining room is a good way to keep the family happy. As such, it is imperative that you invest in quality products and materials in order to maintain a positive and productive atmosphere. A well stocked kitchen and dining room not only makes meal preparation a breeze, but also enables you to spend more time with your family and enjoy a smorgasbord of foods.</p><br><br><br>
+    </div>
+
     <footer>
-        <!-- ***********************************div1********************************************************** -->
+        <!-- ************************************div1*********************************************************** -->
         <div>
             <div>
-                <h3>Useful Links</h3>
+                <h2>Useful Links</h2>
                 <a href="">About Us</a>
                 <a href="">Our Blog</a>
                 <a href="">Careers</a>
@@ -968,7 +971,7 @@ footer>div:nth-child(4) div{
                 <a href="">Customer Reviews</a>
             </div>
             <div>
-                <h3>Partners</h3>
+                <h2>Partners</h2>
                 <a href="">Sell With Us</a>
                 <a href="">Become a Franchisee</a>
                 <a href="">Become a Pep Homie</a>
@@ -979,7 +982,7 @@ footer>div:nth-child(4) div{
                 <a href="">Corporate Enquiries</a>
             </div>
             <div>
-                <h3>Need Help?</h3>
+                <h2>Need Help?</h2>
                 <a href="">Contact Us</a>
                 <a href="">Returns & Refund</a>
                 <a href="">Track Your Order</a>
@@ -987,17 +990,18 @@ footer>div:nth-child(4) div{
                 <a href="">Buy on Phone</a>
             </div>
             <div>
-                <h3>Download App</h3>
+                <h2>Download App</h2>
                 <a href="https://apps.apple.com/in/app/pepperfry/id972047429"><img
-                        src="https://e7.pngegg.com/pngimages/718/1015/png-clipart-app-store-apple-google-play-apple-text-logo.png"
+                        src="./images/download (1).png"
                         alt="Download App"></a>
-                 <img style="padding-right: 0%;" src="https://tse2.mm.bing.net/th?id=OIP.GZhmkG200Ppz-ezObC3JfQHaCi&pid=Api&P=0" alt="">
+                <a href="https://play.google.com/store/apps/details?id=com.app.pepperfry&pli=1"><img
+                        src="./images/download.png" alt="Download App"></a>
             </div>
         </div>
-        <!-- ***********************************div2********************************************************** -->
+        <!-- ************************************div2*********************************************************** -->
         <div>
             <div>
-                <h3>Popular Categories</h3>
+                <h2>Popular Categories</h2>
                 <a href="#">Queen Size Beds, King Size Beds, Coffee Tables, Dining Sets, Recliners, Sofa cum Beds,
                     Rocking Chairs, Cabinets, Book Shelves, TV Unit, Wardrobes, Outdoor Furniture, Bar Cabinets, Wall
                     Shelves, Photo Frames, Bed Sheets, Mattresses, Table Cloth, Living Room Furniture, Study Tables,
@@ -1005,7 +1009,7 @@ footer>div:nth-child(4) div{
                     Trundle Bed</a>
             </div>
             <div>
-                <h3>Popular Brands</h3>
+                <h2>Popular Brands</h2>
                 <a href="#">Mintwud, Woodsworth, CasaCraft, Amberville, Mudramark, Bohemiana, Clouddio, Spacewood,
                     Durian, Green Soul, Godrej Interio, Nilkamal, Orange Tree , HomeTown , Duroflex , Sleepyhead , Peps
                     India , NestAsia , Jaipur Rugs , Obettee , Eliante by Jainsons , @Home , Bombay Dyeing , Kapoor E
@@ -1013,35 +1017,24 @@ footer>div:nth-child(4) div{
                     Mehta</a>
             </div>
             <div>
-                <h3>Cities we deliver to</h3>
+                <h2>Cities we deliver to</h2>
                 <a href="#">Bengaluru, Mumbai, Navi Mumbai, Delhi, Hyderabad, Pune, Chennai, Gurgaon, Kolkata, Noida,
                     Goa, Ghaziabad, Ahmedabad, Coimbatore, Faridabad, Jaipur, Lucknow, Kochi, Visakhapatnam, Chandigarh,
                     Vadodara, Nagpur, Thiruvananthapuram, Indore, Mysore, Bhopal, Surat, Jalandhar, Patna, Ludhiana,
                     Nashik, Madurai, Kanpur, Aurangabad and many more</a>
             </div>
         </div>
-        <!-- ***********************************div3********************************************************** -->
+        <!-- ************************************div3*********************************************************** -->
         <div>
-            <div id="visa">
-
-                <div>
-                    <h3>We Accept</h3><br>
-                    <img style="height: 50%;width: 35%;" src="https://tse3.mm.bing.net/th?id=OIP.ah9LG1cJajShwcxSZQ2WeAHaHa&pid=Api&P=0" alt=""><br><br>
-                <img style="height: 40%;width: 35%;" src="https://tse2.mm.bing.net/th?id=OIP.9FNJf35UgibeDuU6t7zh_wHaCO&pid=Api&P=0" alt="jyfjcjyf"><br>
-                
-                </div>
-                <div>
-                <img style="padding-right: 200%;" src="projectVisa.jpg" alt="">
-                    
-                </div>
+            <div>
+                <h2>We Accept</h2>
+                <img src="./images/Capture.PNG" alt="jyfjcjyf">
             </div>
-        
-            <div id="LastImages">
-                <h3>Like what you see? You'll like us even more here</h3><br><br>
+            <div>
+                <h2>Like what you see? You'll like us even more here</h2>
                 <div class="footer-icons">
                     <a href="https://www.facebook.com/Pepperfry" target="_blank" class="facebook-icon"><i
-                        class="fab fa-facebook-f"></i></a>
-
+                            class="fab fa-facebook-f"></i></a>
                     <a href="https://twitter.com/pepperfry" target="_blank" class="twitter-icon"><i
                             class="fab fa-twitter"></i></a>
                     <a href="https://www.youtube.com/user/Pepperfrytv" target="_blank" class="youtube-icon"><i
@@ -1054,16 +1047,20 @@ footer>div:nth-child(4) div{
                             class="fab fa-pinterest-p"></i></a>
                 </div>
             </div>
-        </div> 
-
-        <!-- ***********************************div4********************************************************** -->
-        
-        <div class="top14">
+        </div>
+        <!-- ************************************div4*********************************************************** -->
+        <div>
             <div>
-                <p style="word-spacing: 55px">BuyInBulk WriteATestimonial</p>
+                <p>Buy In Bulk</p>
+                <p>Write A Testimonial</p>
             </div>
             <div>
-                <p style="word-spacing: 55px">WhitehatSiteMap TermsOfUse PrivacyPolicy YourData&Security GrievanceRedressal</p>
+                <p>Whitehat</p>
+                <p>Site Map</p>
+                <p>Terms Of Use</p>
+                <p>Privacy Policy</p>
+                <p>Your Data & Security </p>
+                <p>Grievance Redressal</p>
             </div>
         </div>
     </footer>
