@@ -188,7 +188,14 @@ function productCard(data){
     
     }
 
+//selected value in search result--start
 
+if(null!==value && value!==undefined && value!==""){
+    style.value = value;
+    // style.dispatchEvent(new Event('click'));
+    style.click();
+  }
+  //selected value in search result--end
     
 
     
