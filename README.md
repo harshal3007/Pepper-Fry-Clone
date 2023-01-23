@@ -9,7 +9,7 @@ Project: https://www.pepperfry.com/
 
 I.A Manger : vaibhav.sultane@masaischool.com
 
-Team Members: 4 members
+Team Members: 3 members
 
 
 1.Student code-   fp08_090,
@@ -33,11 +33,6 @@ Asign-  Team member,
 Github Username-  harshal3007,
 
 
-4.Student code-  fw21_0275,
-Name-    shrinivas balaji katkamwar,
-Web Page-  Product page, cart page,
-Asign-  Team member,
-Github Username-  sinnu1908,
 
 
 Short Description about pepperfry:
