@@ -1,37 +1,15 @@
-# unnatural-throat-9914
-
-
-CW-JS201-B22
-
-Project code: unnatural-throat-9914
-
-Project: https://www.pepperfry.com/
-
-I.A Manger : vaibhav.sultane@masaischool.com
 
 Team Members: 3 members
 
 
-1.Student code-   fp08_090,
-Name-  saurabh singh rana,
-Web Page-  Git hub,checkout Page and login sign up ,
-Asign-  Team Lead,
-Github Username-Saurabh7221,
+1.Name-  saurabh singh rana,
+Web Page-  checkout Page and login sign up ,
 
-
-2.Student code-fw23_0573,
-Name-  bhavana,
+2.Name-  bhavana,
 Web Page-  Login ,sign page,furnitess,pets,
-Asign-  Team member,
-Github Username-  bhavanakoguru,
 
-
-3.Student code-  fw23_0868,
-Name-   harshal bhawsar,
-Web Page-  Homepage,
-Asign-  Team member,
-Github Username-  harshal3007,
-
+3.Name-   harshal bhawsar,
+Web Page-  Homepage, Products Page.
 
 
 
